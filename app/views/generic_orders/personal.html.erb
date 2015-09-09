@@ -1,0 +1,70 @@
+<script>
+    $(function () {
+
+        $("#date").datepicker();
+    });
+</script>
+
+<body>
+
+
+<div class="container">
+  <%= render 'header' %>
+  <%= render 'response' %>
+</div>
+
+<div class="spacer container"></div>
+<div class="spacer container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-8">
+      <h1>Please enter the details of your order</h1><br><br>
+
+      <form action="/generic_orders" method="post">
+        <div class="form-group">
+          <label for="message-text" class="control-label">Name:</label>
+          <input class="form-control" id="Customer-Name" name="name" required>
+        </div>
+
+        <div id="name_error" class="Error_Text"></div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Address:</label>
+          <textarea class="form-control" id="Customer-Address" name="address" required></textarea>
+        </div>
+
+        <div id="address_error" class="Error_Text"></div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Phone Number:</label>
+          <input type="number" class="form-control" id="Customer-Phone" name="phone" required>
+        </div>
+
+        <div id="phone_error_message" class="Error_Text"></div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Email:</label>
+          <input class="form-control" id="Customer-Email" name="email" required>
+        </div>
+
+        <div id="email_error" class="Error_Text"></div>
+
+        <button type="submit" class="btn btn-primary">Book Now</button>
+
+      </form>
+
+
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
+
+<%= render 'footer' %>
+
+<div class="spacer"></div>
+
+</body>
+</html>

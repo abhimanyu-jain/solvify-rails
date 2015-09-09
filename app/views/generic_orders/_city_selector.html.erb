@@ -1,0 +1,29 @@
+<!-- Modal -->
+<div class="modal fade" id="city" role="dialog" data-backdrop='static'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Select your location</h4>
+      </div>
+      <form action="/set_city" method="GET">
+        <div class="modal-body" id="city_name">
+          <select class="form-control" id="cities" name="cities">
+            <option>Bangalore</option>
+            <option>Gurgaon</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default">OK</button><!-- data-dismiss="modal"modal fade interferes with form submission-->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+    $(function () {
+        $('#city').modal('toggle');
+    });
+</script>

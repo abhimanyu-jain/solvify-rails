@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".navbar-nav li a").click(function (event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+    });
+</script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="http://www.solvify.in"><h3 class="white_text" id="navbar_title">Solvify</h3><sup> Beta</sup></a>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right list-inline icons" style="margin-top: 10px;">
+          <li><h4 class="white_text">8884253299</h4></li>
+          <% if user_signed_in? %>
+              Logged in as <strong><%= current_user.email %></strong>.
+              <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+          <% else %>
+              <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
+              <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
