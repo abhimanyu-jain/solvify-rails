@@ -40,8 +40,6 @@ ActiveRecord::Schema.define(version: 20150909202547) do
     t.string   "status"
     t.text     "customer_comments"
     t.string   "origin_of_request"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
     t.string   "name"
     t.text     "address"
     t.integer  "phone",             limit: 8

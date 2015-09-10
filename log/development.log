@@ -34679,3 +34679,301 @@ PG::DuplicateDatabase: ERROR:  database "postgres" already exists
   [1m[35m (1.8ms)[0m  CREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
   [1m[36m (1.4ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
   [1m[35m (0.8ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer(8), "service" varchar, "initiated_on" datetime, "booking_date" date, "booking_slot" time, "rating" integer, "feedback" text, "amount" integer, "vendor_id" integer(8), "status" varchar, "customer_comments" text, "origin_of_request" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar, "address" text, "phone" integer(8), "email" varchar, "coupon_code" varchar) 
+
+
+Started GET "/" for ::1 at 2015-09-10 11:52:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateOrders (20150909000819)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (29.6ms)[0m  [1mCREATE TABLE "orders" ("id" serial primary key, "customer_id" bigint, "service" character varying, "initiated_on" timestamp, "booking_date" date, "booking_slot" time, "rating" integer, "feedback" text, "amount" integer, "vendor_id" bigint, "status" character varying, "customer_comments" text, "origin_of_request" character varying, "name" character varying, "address" text, "phone" bigint, "email" character varying, "coupon_code" character varying) [0m
+PG::DuplicateTable: ERROR:  relation "orders" already exists
+: CREATE TABLE "orders" ("id" serial primary key, "customer_id" bigint, "service" character varying, "initiated_on" timestamp, "booking_date" date, "booking_slot" time, "rating" integer, "feedback" text, "amount" integer, "vendor_id" bigint, "status" character varying, "customer_comments" text, "origin_of_request" character varying, "name" character varying, "address" text, "phone" bigint, "email" character varying, "coupon_code" character varying) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+
+
+Started GET "/" for ::1 at 2015-09-10 11:52:56 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateOrders (20150909000819)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "orders" ("id" serial primary key, "customer_id" bigint, "service" character varying, "initiated_on" timestamp, "booking_date" date, "booking_slot" time, "rating" integer, "feedback" text, "amount" integer, "vendor_id" bigint, "status" character varying, "customer_comments" text, "origin_of_request" character varying, "name" character varying, "address" text, "phone" bigint, "email" character varying, "coupon_code" character varying) [0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150909000819"]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'customers'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'orders'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-09-10 11:54:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (4.2ms)
+  Rendered generic_orders/_services.html.erb (243.4ms)
+  Rendered generic_orders/_footer.html.erb (86.9ms)
+  Rendered generic_orders/index.html.erb within layouts/application (373.9ms)
+Completed 200 OK in 774ms (Views: 764.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plumbing.self-8c975d6a81c2491f61156ccdf72acfad86714d23f73824ac8fc963089c086970.css?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/generic_orders.self-bd8c48b08257c532d249fb2cdea0b6a8a28d0c4e802144b082f0f28c9664a981.css?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/devise.self-f5b68aa3176bc00987f799dbfa139faec5907e3a51d1e5cefe5efa86b945bb39.css?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/landing_page.self-fd6ff218e15657c640955c150475275c0c17cf0a9d808beba3c95e15a7c5de7c.css?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/generic_orders.self-3083544d430da7291a90d13a4de8110c5659cb5b2fc1fe125ec13447fd624359.js?body=1" for ::1 at 2015-09-10 11:54:38 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/2-483a0737ea797abe0814423540545928b076f9093e5398c0886a452dea5c6413.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/3-d4b6e35dd8ca58fdf197911823771afb219cc2287e07d55804dfb336e31eed28.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/10-5f4f589a2faf2468a0eace9dd7c899e02077c3b1a2619ff8364d65266157d0c7.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/8-9cd4655de4e09eb7f1fc12b8ea03f4c4d2a9a03a4fb02ca4280976bb784704ed.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/carpenter-b26a4e6bcd9594f0a10863cf35911600c2b12f0d77df5e04d33be4c61fedb1ac.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/1-13f9a6b91fa9d425bdee78592d4cc2964793ce4c781f4734d9cea487235e0c93.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/6-a2bc0eeb5b83bb45315eb9207b65f86f979c55d23d6031cfb90a813f2d52cb20.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/9-e16e09ba409428dc05b8acae9966e798db8263d7ecce2883cf75ae06585cc7ee.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/7-632a105eeafa17a474eae54ebfbda7c0c899f79865d881d3e8d71c89d8c720cd.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/one-2da53c5567ecdbfa8aec6db7cc99b5cc1dab82dd2d12f6c2802f0707f0544ce0.jpg" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/two-87a6361abec1795d71a227a46eeb62510ef90753670bc58b286c1780ccc55907.jpg" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/three-386c8c32e3ada51b0339ba5e3e27d3998f57d15bdf104ced7e330af4d46e0bb7.jpg" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/fb_icon-983d20d7ab22f6702784a58920ceeeaa4ff6b5043213cd98bd44d5fb6fdd1345.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/twt_icon-267e710525fc4e295e50aa93525a94b3146f594c8951152a48ae711ade14f542.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/whatsapp-28c0257172c2bbb3f13805d7fa80e4eb836a041fd9a46c0c170043950a11727b.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/android_app-db2e4a861cd472253294f8fbaac8bcef6784526ab0b8de153a117a6796ca2996.png" for ::1 at 2015-09-10 11:54:39 +0530
+
+
+Started GET "/assets/bg-0234b13e21b71b4ce76325e188cc20abad6a51bb7409152f07637f5411bfdf9f.jpg" for ::1 at 2015-09-10 11:54:40 +0530
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-10 11:54:44 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-10 11:54:44 +0530
+Processing by GenericOrdersController#electrical as HTML
+  Rendered generic_orders/_header.html.erb (1.5ms)
+  Rendered generic_orders/_footer.html.erb (8.8ms)
+  Rendered generic_orders/electrical.erb within layouts/application (13.1ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Personal_Info?date=&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-10 11:55:12 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/_header.html.erb (0.8ms)
+  Rendered generic_orders/_response.html.erb (0.6ms)
+  Rendered generic_orders/_footer.html.erb (25.2ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 0.0ms)
