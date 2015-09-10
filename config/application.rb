@@ -27,5 +27,6 @@ module Solvify
     config.assets.enabled = true
     config.assets.version = '1.0'
     config.time_zone = 'Kolkata'
+    config.assets.initialize_on_precompile = false
   end
 end
