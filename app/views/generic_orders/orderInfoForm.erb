@@ -1,0 +1,74 @@
+<script>
+    $(function() {
+        $( "#date" ).datepicker();
+    });
+</script>
+
+
+<%= render 'header'%>
+
+<body>
+<div class="spacer container"></div>
+<div class="spacer container">
+  <div class="row">
+    <div class="col-md-1"></div>
+
+    <div class="col-md-6">
+      <%= image_tag(@img, alt: cookies[:service], class: "center-block service_image") %>
+      <h1 class="center"><%= cookies[:service] %></h1><br><br>
+      <h4 class="center">
+        <%= @tag_line %>
+      </h4>
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-4 form_wrapper info_form">
+      <h3>Please Enter The Details Of Your Order</h3><br><br>
+
+      <form action="/Personal_Info">
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Date:</label><br/>
+          <!--<input type="date" id="date">-->
+          <input type="text" id="date" name="date">
+        </div>
+
+        <div id="date_error" class="Error_Text"></div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Slot:</label>
+          <select class="form-control" id="slot" name="slot">
+            <option value="10:00:00">10:00 am - 11:00 am</option>
+            <option value="11:00:00">11:00 am - 12:00 pm</option>
+            <option value="12:00:00">12:00 pm - 01:00 pm</option>
+            <option value="13:00:00">01:00 pm - 02:00 pm</option>
+            <option value="14:00:00">02:00 pm - 03:00 pm</option>
+            <option value="15:00:00">03:00 pm - 04:00 pm</option>
+            <option value="16:00:00">04:00 pm - 05:00 pm</option>
+            <option value="17:00:00">05:00 pm - 06:00 pm</option>
+            <option value="18:00:00">06:00 pm - 07:00 pm</option>
+            <option value="19:00:00">07:00 pm - 08:00 pm</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Any other details:</label>
+          <textarea class="form-control" id="notes" name="customer_notes"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Coupon Code (if any):</label>
+          <input class="form-control" id="Coupon" name="coupon_code">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Next</button>
+
+      </form>
+      <br/><br/>
+    </div>
+  </div>
+</div>
+</body>
+
+<%= render 'footer' %>

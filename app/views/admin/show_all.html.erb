@@ -12,11 +12,12 @@
       <th>booking_slot</th>
       <th>status</th>
       <th>coupon_code</th>
-      <th>Sub category</th>
       <th>amount</th>
       <th>rating</th>
       <th>customer_name</th>
+      <th>phone</th>
       <th>email</th>
+      <th>address</th>
       <th>source of request</th>
     </tr>
     </thead>
@@ -33,11 +34,12 @@
           <td><%= order["booking_slot"] %></td>
           <td><%= order["status"] %></td>
           <td><%= order["coupon_code"] %></td>
-          <td><%= order["Sub category"] %></td>
           <td><%= order["amount"] %></td>
           <td><%= order["rating"] %></td>
           <td><%= order["customer_name"] %></td>
+          <td><%= order["phone"] %></td>
           <td><%= order["email"] %></td>
+          <td><%= order["address"] %></td>
           <td><%= order["origin_of_request"] %></td>
         </tr>
     <% end %>
