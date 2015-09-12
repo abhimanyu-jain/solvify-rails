@@ -104,7 +104,7 @@ class GenericOrdersController < ApplicationController
 
   def set_city
     cookies[:city] = params[:cities]
-    redirect_to :index
+    render :index
   end
 
   private
