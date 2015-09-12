@@ -29,12 +29,13 @@
           <option>Computer Repair</option>
           <option>Appliance Repair</option>
           <option>House Cleaning</option>
-          <option>Cook</option>
+          <option>Carpenter</option>
           <option>Other</option>
-          <option disabled>-----Launching soon-----</option>
-          <option disabled>Keymaker</option>
-          <option disabled>Carpenter</option>
-          <option disabled>Painter</option>
+          <%= if cookies[:city] == 'Bangalore'
+                options_for_select(["Cook", "Painter", "Keymaker"])
+              end%><!--<option>Cook</option>
+          <option>Painter</option>
+          <option>Keymaker</option>-->
         </select>
       </div>
 

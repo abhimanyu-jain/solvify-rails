@@ -1,3 +1,5 @@
+<%= render 'generic_orders/header' %>
+
 <div class="panel panel-primary" id="devise_panel">
   <div class="panel-heading">
     <h2>Log in</h2>
@@ -15,7 +17,7 @@
         <div class="field">
           <%= f.label :password %>
           <br/>
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.password_field :password, autocomplete: "off", class: "u-full-width"%>
         </div>
 
         <% if devise_mapping.rememberable? -%>
@@ -33,3 +35,5 @@
     <%= render "devise/shared/links" %>
   </div>
 </div>
+
+<%= render 'generic_orders/footer' %>
