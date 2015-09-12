@@ -26,8 +26,9 @@ class GenericOrdersController < ApplicationController
   }
 
   def index
-    if session[:city]
-      @city = session[:city]
+    binding.pry
+    if cookies[:city] != nil
+      @city = cookies[:city]
     end
   end
 
@@ -103,8 +104,9 @@ class GenericOrdersController < ApplicationController
   end
 
   def set_city
-    session[:city] = params[:cities]
-    render :index
+    binding.pry
+    cookies[:city] = params[:cities]
+    redirect_to :index
   end
 
   private

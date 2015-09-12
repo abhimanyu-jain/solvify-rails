@@ -5,9 +5,10 @@
 
 <%= render 'header' %>
 
-<%= if @city == ''
-      render 'city_selector'
-      end %>
+<%=   if cookies[:city] == nil
+        render 'city_selector'
+        end
+%>
 
 <div id="main">
     <h2 class="text-center">Find a trusted service provider near you</h2>
