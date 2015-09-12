@@ -26,7 +26,6 @@ class GenericOrdersController < ApplicationController
   }
 
   def index
-    binding.pry
     if cookies[:city] != nil
       @city = cookies[:city]
     end
@@ -104,7 +103,6 @@ class GenericOrdersController < ApplicationController
   end
 
   def set_city
-    binding.pry
     cookies[:city] = params[:cities]
     redirect_to :index
   end

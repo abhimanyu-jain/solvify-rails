@@ -40763,3 +40763,157 @@ Started GET "/assets/whatsapp-28c0257172c2bbb3f13805d7fa80e4eb836a041fd9a46c0c17
 
 
 Started GET "/assets/android_app-db2e4a861cd472253294f8fbaac8bcef6784526ab0b8de153a117a6796ca2996.png" for ::1 at 2015-09-12 16:44:43 +0530
+
+
+Started GET "/" for ::1 at 2015-09-12 16:48:17 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (2.0ms)
+  Rendered generic_orders/_services.html.erb (15.2ms)
+  Rendered generic_orders/_footer.html.erb (9.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 7022ms (Views: 80.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/landing_page.self-20b7d515872e64cb2b36ab3112021b6338e862231e0d4d60054fdada9849f4ab.css?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/generic_orders.self-1d3f3a3589749e424de1979684d8963455772d05f27b6484c2b1eaa6fad51262.css?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/devise.self-f5b68aa3176bc00987f799dbfa139faec5907e3a51d1e5cefe5efa86b945bb39.css?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/generic_orders.self-3083544d430da7291a90d13a4de8110c5659cb5b2fc1fe125ec13447fd624359.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/2-483a0737ea797abe0814423540545928b076f9093e5398c0886a452dea5c6413.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/3-d4b6e35dd8ca58fdf197911823771afb219cc2287e07d55804dfb336e31eed28.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/10-5f4f589a2faf2468a0eace9dd7c899e02077c3b1a2619ff8364d65266157d0c7.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/8-9cd4655de4e09eb7f1fc12b8ea03f4c4d2a9a03a4fb02ca4280976bb784704ed.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/carpenter-b26a4e6bcd9594f0a10863cf35911600c2b12f0d77df5e04d33be4c61fedb1ac.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/1-13f9a6b91fa9d425bdee78592d4cc2964793ce4c781f4734d9cea487235e0c93.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/11-a2bc0eeb5b83bb45315eb9207b65f86f979c55d23d6031cfb90a813f2d52cb20.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/9-e16e09ba409428dc05b8acae9966e798db8263d7ecce2883cf75ae06585cc7ee.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/7-632a105eeafa17a474eae54ebfbda7c0c899f79865d881d3e8d71c89d8c720cd.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/one-2da53c5567ecdbfa8aec6db7cc99b5cc1dab82dd2d12f6c2802f0707f0544ce0.jpg" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/two-87a6361abec1795d71a227a46eeb62510ef90753670bc58b286c1780ccc55907.jpg" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/three-386c8c32e3ada51b0339ba5e3e27d3998f57d15bdf104ced7e330af4d46e0bb7.jpg" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/fb_icon-983d20d7ab22f6702784a58920ceeeaa4ff6b5043213cd98bd44d5fb6fdd1345.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/twt_icon-267e710525fc4e295e50aa93525a94b3146f594c8951152a48ae711ade14f542.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/whatsapp-28c0257172c2bbb3f13805d7fa80e4eb836a041fd9a46c0c170043950a11727b.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/android_app-db2e4a861cd472253294f8fbaac8bcef6784526ab0b8de153a117a6796ca2996.png" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/generic_orders.self-3083544d430da7291a90d13a4de8110c5659cb5b2fc1fe125ec13447fd624359.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-09-12 16:48:24 +0530
+
+
+Started GET "/assets/2-483a0737ea797abe0814423540545928b076f9093e5398c0886a452dea5c6413.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/8-9cd4655de4e09eb7f1fc12b8ea03f4c4d2a9a03a4fb02ca4280976bb784704ed.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/carpenter-b26a4e6bcd9594f0a10863cf35911600c2b12f0d77df5e04d33be4c61fedb1ac.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/3-d4b6e35dd8ca58fdf197911823771afb219cc2287e07d55804dfb336e31eed28.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/10-5f4f589a2faf2468a0eace9dd7c899e02077c3b1a2619ff8364d65266157d0c7.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/1-13f9a6b91fa9d425bdee78592d4cc2964793ce4c781f4734d9cea487235e0c93.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/11-a2bc0eeb5b83bb45315eb9207b65f86f979c55d23d6031cfb90a813f2d52cb20.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/9-e16e09ba409428dc05b8acae9966e798db8263d7ecce2883cf75ae06585cc7ee.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/7-632a105eeafa17a474eae54ebfbda7c0c899f79865d881d3e8d71c89d8c720cd.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/one-2da53c5567ecdbfa8aec6db7cc99b5cc1dab82dd2d12f6c2802f0707f0544ce0.jpg" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/two-87a6361abec1795d71a227a46eeb62510ef90753670bc58b286c1780ccc55907.jpg" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/three-386c8c32e3ada51b0339ba5e3e27d3998f57d15bdf104ced7e330af4d46e0bb7.jpg" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/fb_icon-983d20d7ab22f6702784a58920ceeeaa4ff6b5043213cd98bd44d5fb6fdd1345.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/twt_icon-267e710525fc4e295e50aa93525a94b3146f594c8951152a48ae711ade14f542.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/android_app-db2e4a861cd472253294f8fbaac8bcef6784526ab0b8de153a117a6796ca2996.png" for ::1 at 2015-09-12 16:48:25 +0530
+
+
+Started GET "/assets/whatsapp-28c0257172c2bbb3f13805d7fa80e4eb836a041fd9a46c0c170043950a11727b.png" for ::1 at 2015-09-12 16:48:25 +0530
