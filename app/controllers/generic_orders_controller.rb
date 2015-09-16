@@ -25,6 +25,7 @@ class GenericOrdersController < ApplicationController
       }
   }
 
+
   def index
     if cookies[:city] != nil
       @city = cookies[:city]
@@ -36,9 +37,16 @@ class GenericOrdersController < ApplicationController
 
   def create
     @order = Order.new(order_params)
-    if @order[:origin_of_request] == nil
-      @order[:origin_of_request] = @@src
+    if current_user.id != nil
+      @order[:customer_id] = current_user.id
     end
+
+    if browser.mobile?
+      @order[:origin_of_request] = "mobile browser"
+    else
+      @order[:origin_of_request] = "desktop browser"
+    end
+
     @order[:service] = cookies[:service]
     @order[:initiated_on] = DateTime.now
     @order[:rating] = 0
@@ -55,7 +63,7 @@ class GenericOrdersController < ApplicationController
     @order[:customer_comments] = @@customer_notes
     @order[:coupon_code] = @@coupon_code
     @order.save
-    render json: @order.to_json
+    render json: @order
   end
 
   def show
@@ -84,12 +92,6 @@ class GenericOrdersController < ApplicationController
     @@slot = params[:slot]
     @@customer_notes = params[:customer_notes]
     @@coupon_code = params[:coupon_code]
-
-    if browser.mobile?
-      @@src = "mobile browser"
-    else
-      @@src = "desktop browser"
-    end
   end
 
   def orderInfoForm
@@ -98,13 +100,43 @@ class GenericOrdersController < ApplicationController
     if cookies[:service] != temp
       cookies[:service] = temp
     end
+
+    if city_to_service == false
+      redirect_to :root
+    end
+
     @img = @@img_src[cookies[:service]]["img"]
     @tag_line = @@img_src[cookies[:service]]["tagline"]
+  end
+
+  def orderConfirmation
+
   end
 
   def set_city
     cookies[:city] = params[:cities]
     render :index
+  end
+
+  def displayUserOrders
+    user_id = current_user.id
+    @orders = Order.where("customer_id = " + user_id.to_s)
+    #render json: @order
+  end
+
+  helper_method :img_src
+  def img_src
+    if cookies[:city] == "Bangalore"
+      return @@img_src
+    else
+      @ggn_list = @@img_src
+      @ggn_list.delete("Cook")
+      @ggn_list.delete("Painter")
+      @ggn_list.delete("Keymaker")
+      return @ggn_list
+    end
+
+    return @@img_src
   end
 
   private
@@ -113,11 +145,13 @@ class GenericOrdersController < ApplicationController
     params.permit(:customer_id, :service, :booking_date, :booking_slot, :customer_comments, :name, :address, :phone, :email)
   end
 
-  #gurgaon_services = Array.new("Electrical", "Plumbing", "Packers and Movers", "Car Wash", "Pest Control", "Computer Repair", "Appliance Repair", "House Cleaning", "Carpenter", "Cook", "Painter", "Keymaker")
-  #@@bangalore_services = Array.new("Electrical", "Plumbing", "Packers and Movers", "Car Wash", "Pest Control", "Computer Repair", "Appliance Repair", "House Cleaning", "Carpenter", "Cook", "Painter", "Keymaker")
-
-
-  def get_services_list
+  def city_to_service
+    if cookies[:city] == 'Gurgaon'
+      if cookies[:service] == 'Cook' or cookies[:service] == 'Painter' or cookies[:service] == 'Keymaker'
+        return false
+      end
+    end
+    return true
   end
 
 end

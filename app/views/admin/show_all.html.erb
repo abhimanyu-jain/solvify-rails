@@ -31,7 +31,7 @@
           <td><%= order["customer_comments"] %></td>
           <td><%= order["address"] %></td>
           <td><%= order["booking_date"] %></td>
-          <td><%= order["booking_slot"] %></td>
+          <td><%= (order["booking_slot"] + 2*3600).strftime("%l:%M%p")%></td>
           <td><%= order["status"] %></td>
           <td><%= order["coupon_code"] %></td>
           <td><%= order["amount"] %></td>

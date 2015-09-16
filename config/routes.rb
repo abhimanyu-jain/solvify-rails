@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  #devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -14,22 +14,24 @@ Rails.application.routes.draw do
   get 'service'  => 'generic_orders#orderInfo'
   get 'Plumbing' => 'generic_orders#orderInfoForm'
   get 'Electrical' => 'generic_orders#orderInfoForm'
-  get 'Appliance Repair' => 'generic_orders#orderInfoForm'
-  get 'Car Wash' => 'generic_orders#orderInfoForm'
+  get 'Appliance Repair' => 'generic_orders#orderInfoForm', as: :Appliance
+  get 'Car Wash' => 'generic_orders#orderInfoForm', as: :Car
   get 'Carpenter' => 'generic_orders#orderInfoForm'
-  get 'Computer Repair' => 'generic_orders#orderInfoForm'
+  get 'Computer Repair' => 'generic_orders#orderInfoForm', as: :Computer
   get 'Cook' => 'generic_orders#orderInfoForm'
-  get 'House Cleaning' => 'generic_orders#orderInfoForm'
+  get 'House Cleaning' => 'generic_orders#orderInfoForm', as: :Cleaning
   get 'Keymaker' => 'generic_orders#orderInfoForm'
   get 'Laundry' => 'generic_orders#orderInfoForm'
-  get 'Packers And Movers' => 'generic_orders#orderInfoForm'
+  get 'Packers And Movers' => 'generic_orders#orderInfoForm', as: :PAM
   get 'Painter' => 'generic_orders#orderInfoForm'
-  get 'Pest Control' => 'generic_orders#orderInfoForm'
-
-
-
+  get 'Pest Control' => 'generic_orders#orderInfoForm', as: :Pest
+  post 'confirmation' => 'generic_orders#orderConfirmation'
   get 'dashboard' => 'admin#show_all'
   get 'set_city' => 'generic_orders#set_city'
+  get 'MyOrders' => 'generic_orders#displayUserOrders', as: :myOrders
+
+  devise_for :users, controllers: {registrations: "users/registrations"}
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

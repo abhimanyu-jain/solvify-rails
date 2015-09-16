@@ -1,0 +1,69 @@
+<%= render 'header' %>
+<div class="spacer container"></div>
+<div class="spacer container"></div>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1>My Orders</h1><br/><br/>
+  <div class="table-responsive" id="myOrders">
+  <table class="table table-striped" id="requests">
+    <!--<thead>
+    <tr>
+      <th>initiated_on</th>
+      <th>service_selected</th>
+      <th>customer_notes</th>
+      <th>address</th>
+      <th>booking_date</th>
+      <th>booking_slot</th>
+      <th>status</th>
+      <th>coupon_code</th>
+      <th>amount</th>
+      <th>rating</th>
+      <th>customer_name</th>
+      <th>phone</th>
+      <th>email</th>
+      <th>address</th>
+    </tr>
+    </thead>-->
+    <tbody>
+    <% @orders.each do |order| %>
+        <tr>
+          <td><h4><%= order["service"] %></h4>
+            <%= order["customer_comments"] %>
+            <br/>
+            Current Status : <%= order["status"] %>
+          </td>
+          <td>
+            <%= order["name"] %>
+            <br/>
+            <%= order["address"] %>
+            <br/>
+            <%= order["phone"] %>
+            <br/>
+            <%= order["email"] %>
+          </td>
+          <td>
+            Ordered on :
+            <br/>
+            <%= order["initiated_on"].strftime("%l:%M%p")%>
+            <br/>
+            <%= order["initiated_on"].strftime("%d-%m-%Y")%>
+          </td>
+
+          <td>
+            Your Selected Slot :
+            <br/>
+            <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 2*3600).strftime("%l:%M%p") %>
+            <br/>
+            <%= order["booking_date"] %>
+          </td>
+                  </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+</div>
+  <div class="col-md-2"></div>
+</div>
+<%= render 'footer' %>

@@ -3,6 +3,9 @@
         $(".navbar-nav li a").click(function (event) {
             $(".navbar-collapse").collapse('hide');
         });
+
+        $("#set_city").click(function() { window.location= "/set_city"});
+
     });
 </script>
 
@@ -17,19 +20,60 @@
           <span class="icon-bar"></span>
         </button>
         <a href="http://www.solvify.in"><h3 class="white_text" id="navbar_title">Solvify</h3><sup> Beta</sup></a>
+        <ul class="nav navbar-nav navbar-right list-inline icons" style="margin-top: 20px; margin-left: 50px;">
+          <li><h5><%= link_to 'Home', root_path, :class => 'header-link white_text' %></h5></li>
+          <li>
+            <h5><%= link_to 'My Orders', myOrders_path, :class => 'header-link white_text' %></h5>
+          </li>
+          <li>
+            <div class="dropdown">
+              <h5 class="dropdown-toggle white_text" data-toggle="dropdown">
+                <%= link_to 'Services', "#", :class => 'header-link white_text' %>
+              </h5>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <% img_src.each do |key,value| %>
+                    <li><%= link_to key, key %></li>
+                <% end %>
+              </ul>
+            </div>
+          </li>
+          <!--<li><h5 class="white_text">City : </h5></li>-->
+          <li>
+            <div>
+              <button class="btn btn-success" type="button" id="set_city">
+                <% if cookies[:city] == nil %>
+                    Select City
+                <% else %>
+                    <%= cookies[:city] %>
+                <% end %>
+                <span class="caret"></span>
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right list-inline icons" style="margin-top: 10px;">
-          <li><h4 class="white_text">8884253299</h4></li>
-          <% if user_signed_in? %>
-              <li><h4>Logged in as <strong class="white_text"><%= current_user.email %></strong>.</h4></li>
-              <li><h4><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link white_text' %></h4></li>
-              <li><h4><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></h4></li>
-          <% else %>
-              <li><h4><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'%></h4></li>
-              <li><h4><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></h4></li>
-          <% end %>
+        <ul class="nav navbar-nav navbar-right list-inline icons" style="margin-top: 20px;">
+          <li>
+            <% if user_signed_in? %>
+                <div class="dropdown">
+                  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Logged in as <%= current_user.username %></button>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+                    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                  </ul>
+                </div>
+            <% else %>
+                <div class="dropdown">
+                  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Log in/Sign up</button>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Sign up", new_user_registration_path %></li>
+                    <li><%= link_to "Login", new_user_session_path %></li>
+                  </ul>
+                </div>
+            <% end %>
+          </li>
         </ul>
       </div>
     </div>
