@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   get 'set_city' => 'generic_orders#set_city'
   get 'MyOrders' => 'generic_orders#displayUserOrders', as: :myOrders
 
+  post 'changeStatus' => 'admin#changeStatus'
+
   devise_for :users, controllers: {registrations: "users/registrations"}
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

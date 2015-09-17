@@ -50147,3 +50147,919 @@ Processing by GenericOrdersController#index as HTML
   Rendered generic_orders/_footer.html.erb (9.4ms)
   Rendered generic_orders/index.html.erb within layouts/application (52.0ms)
 Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-17 12:20:44 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-17 12:20:44 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  [1m[36mUser Load (31.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (34.2ms)
+  Rendered generic_orders/_footer.html.erb (9.6ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (55.1ms)
+Completed 200 OK in 128ms (Views: 96.1ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/users/edit" for ::1 at 2015-09-17 12:20:58 +0530
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/_header.html.erb (0.9ms)
+  Rendered generic_orders/_footer.html.erb (15.1ms)
+  Rendered users/registrations/edit.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 12:21:18 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (1.6ms)
+  [1m[35mOrder Load (8.6ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (6.5ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (61.8ms)
+Completed 200 OK in 106ms (Views: 87.5ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:42:11 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (28.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (5.1ms)
+  [1m[35mOrder Load (32.7ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (31.3ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (93.3ms)
+Completed 200 OK in 294ms (Views: 204.3ms | ActiveRecord: 61.0ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:42:58 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (1.0ms)
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (13.2ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 134ms (Views: 130.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:43:18 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (1.0ms)
+  [1m[35mOrder Load (0.9ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (7.5ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 74ms (Views: 69.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:43:37 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (0.6ms)
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (6.0ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:45:09 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (1.2ms)
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (17.2ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:45:12 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (0.6ms)
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (7.9ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 15:48:02 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (0.6ms)
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (8.5ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 86ms (Views: 82.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:38:11 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (17.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (31.0ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 317ms (Views: 242.3ms | ActiveRecord: 48.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:38:11 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 64ms (Views: 59.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:38:29 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:40:37 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (11.9ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 87ms (Views: 73.0ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:40:55 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:41:12 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:41:14 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:41:34 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 67ms (Views: 62.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:42:48 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:43:31 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:44:13 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.8ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:45:23 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:45:33 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:51:34 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:52:10 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:54:08 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 21:59:37 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:00:14 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (1.0ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:02:38 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (1.1ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:03:54 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:04:22 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 109ms (Views: 106.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:05:04 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:08:25 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 127ms (Views: 54.6ms | ActiveRecord: 48.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:10:00 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:11:02 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/changeStatus/" for ::1 at 2015-09-17 22:11:14 +0530
+
+ActionController::RoutingError (No route matches [POST] "/changeStatus"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:11:38 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:11:43 +0530
+
+ActionController::RoutingError (No route matches [POST] "/changeStatus"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 22:12:00 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (15.8ms)
+  Rendered generic_orders/_services.html.erb (22.7ms)
+  Rendered generic_orders/_footer.html.erb (7.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 95ms (Views: 89.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 22:12:00 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (3.1ms)
+  Rendered generic_orders/_services.html.erb (13.9ms)
+  Rendered generic_orders/_footer.html.erb (9.0ms)
+  Rendered generic_orders/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:12:05 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 76ms (Views: 69.8ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:12:09 +0530
+Processing by AdminController#changeStatus as HTML
+  Parameters: {"id"=>"1", "newStatus"=>"In Progress"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.3) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.3) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  devise (3.5.2) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request'
+  actionpack (4.2.3) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:430:in `block in make_lambda'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:162:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:162:in `block in halting'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `each'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 22:12:16 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (2.3ms)
+  Rendered generic_orders/_services.html.erb (21.5ms)
+  Rendered generic_orders/_footer.html.erb (6.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 22:12:41 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (19.0ms)
+  Rendered generic_orders/_services.html.erb (20.6ms)
+  Rendered generic_orders/_footer.html.erb (6.2ms)
+  Rendered generic_orders/index.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 101ms (Views: 94.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:12:44 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 50ms (Views: 44.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:12:44 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:12:48 +0530
+Processing by AdminController#changeStatus as HTML
+  Parameters: {"id"=>"1", "newStatus"=>"In Progress"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 8245ms (ActiveRecord: 0.3ms)
+
+ActionView::MissingTemplate (Missing template admin/changeStatus, application/changeStatus with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/abhimanyu.jain/practice/app/views"
+  * "/Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/devise-3.5.2/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (17.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:14:27 +0530
+Processing by AdminController#show_all as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered admin/show_all.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 85ms (Views: 64.8ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:14:30 +0530
+Processing by AdminController#changeStatus as HTML
+  Parameters: {"id"=>"1", "newStatus"=>"In Progress"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (23.7ms)[0m  [1mUPDATE "orders" SET "status" = $1 WHERE "orders"."id" = $2[0m  [["status", "In Progress"], ["id", 1]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to 
+Completed 500 Internal Server Error in 5575ms (ActiveRecord: 26.1ms)
+
+NoMethodError (undefined method `dashboard_url_url' for #<AdminController:0x007fe4853ab328>):
+  app/controllers/admin_controller.rb:20:in `changeStatus'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:14:44 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 90ms (Views: 63.3ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:14:49 +0530
+Processing by AdminController#changeStatus as HTML
+  Parameters: {"id"=>"2", "newStatus"=>"In Progress"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "orders" SET "status" = $1 WHERE "orders"."id" = $2  [["status", "In Progress"], ["id", 2]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3617ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:14:53 +0530
+Processing by AdminController#show_all as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrder Load (0.9ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered admin/show_all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:15:16 +0530
+Processing by AdminController#changeStatus as HTML
+  Parameters: {"id"=>"1", "newStatus"=>"testing"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "orders" SET "status" = $1 WHERE "orders"."id" = $2[0m  [["status", "testing"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2010ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:15:18 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:20:12 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 67ms (Views: 43.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:21:48 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:22:51 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:23:00 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:23:40 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:24:30 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:24:38 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:24:56 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:26:14 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:26:57 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 48ms (Views: 45.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:27:20 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 22:28:13 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (0.7ms)
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (14.8ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 78ms (Views: 75.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/MyOrders" for ::1 at 2015-09-17 22:28:13 +0530
+Processing by GenericOrdersController#displayUserOrders as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered generic_orders/_header.html.erb (0.4ms)
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders" WHERE (customer_id = 1)
+  Rendered generic_orders/_footer.html.erb (4.3ms)
+  Rendered generic_orders/displayUserOrders.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:29:19 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:29:47 +0530
+Processing by AdminController#show_all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered admin/show_all.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/changeStatus" for ::1 at 2015-09-17 22:29:57 +0530
+Processing by AdminController#changeStatus as HTML
+  Parameters: {"id"=>"3", "newStatus"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrder Load (0.5ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "orders" SET "status" = $1 WHERE "orders"."id" = $2  [["status", ""], ["id", 3]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 13ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-09-17 22:29:57 +0530
+Processing by AdminController#show_all as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered admin/show_all.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.7ms)
