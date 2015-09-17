@@ -12,7 +12,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
    def create
      super
-     binding.pry
      sendMail resource[:email], "donotreply@solvify.in", "Thank You for Registering with Solvify!!", "Dear " + resource[:username] + ",\n" + "Welcome to Solvify, we hope you have a great experience!!!" unless resource.invalid?
    end
 
