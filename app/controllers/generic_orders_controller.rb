@@ -119,9 +119,12 @@ class GenericOrdersController < ApplicationController
   end
 
   def displayUserOrders
-    user_id = current_user.id
-    @orders = Order.where("customer_id = " + user_id.to_s)
-    #render json: @order
+    if current_user == nil
+      redirect_to :new_user_session
+    else
+      user_id = current_user.id
+      @orders = Order.where("customer_id = " + user_id.to_s)
+    end
   end
 
   helper_method :img_src
