@@ -1,5 +1,3 @@
-require 'tasks/email'
-
 class Users::RegistrationsController < Devise::RegistrationsController
 # before_filter :configure_sign_up_params, only: [:create]
 # before_filter :configure_account_update_params, only: [:update]
@@ -10,10 +8,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-   def create
-     super
-     sendMail resource[:email], "donotreply@solvify.in", "Thank You for Registering with Solvify!!", "Dear " + resource[:username] + ",\n" + "Welcome to Solvify, we hope you have a great experience!!!" unless resource.invalid?
-   end
+  # def create
+  #   super
+  # end
 
   # GET /resource/edit
   # def edit
