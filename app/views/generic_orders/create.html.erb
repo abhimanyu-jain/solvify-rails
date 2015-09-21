@@ -1,0 +1,23 @@
+<%= render 'header' %>
+<body>
+<div class="spacer container"></div>
+<div class="spacer container"></div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h3>Thank you for ordering with Solvify. Your order Id is <%= @order[:id] %>.</h3>
+    <h4>
+      <br/>Your order details are : <br/>
+      <br/>Service : <%= @order[:service] %>
+      <br/>Booking Date and Slot : <%= @order["booking_slot"].strftime("%l:%M%p") %> <%=  @order["booking_date"] %>
+      <br/><br/>Thank You
+      <br/>Team Solvify
+      <br/>8884253299"
+    </h4><br/>
+    <button class="my_btn" onclick="back_to_homepage();">Go Back</button>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+</body>
+
+<%= render 'footer' %>

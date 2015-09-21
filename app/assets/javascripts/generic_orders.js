@@ -100,3 +100,7 @@ function verify_data() {
     }
 }
 
+function back_to_homepage() {
+    window.location = "http://www.solvify.in";
+}
+

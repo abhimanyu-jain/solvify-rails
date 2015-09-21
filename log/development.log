@@ -53025,3 +53025,946 @@ Processing by Devise::SessionsController#new as HTML
   Rendered generic_orders/_footer.html.erb (7.1ms)
   Rendered devise/sessions/new.html.erb within layouts/application (16.4ms)
 Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 00:24:01 +0530
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ',', expecting ')'
+    sendMail (to, from, subject, body)
+                 ^
+/Users/abhimanyu.jain/practice/app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ')', expecting '='):
+  app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ',', expecting ')'
+  app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ')', expecting '='
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 00:24:01 +0530
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ',', expecting ')'
+    sendMail (to, from, subject, body)
+                 ^
+/Users/abhimanyu.jain/practice/app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ')', expecting '='):
+  app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ',', expecting ')'
+  app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ')', expecting '='
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 00:25:06 +0530
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ',', expecting ')'
+    sendMail (to, from, subject, body)
+                 ^
+/Users/abhimanyu.jain/practice/app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ')', expecting '='):
+  app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ',', expecting ')'
+  app/controllers/generic_orders_controller.rb:77: syntax error, unexpected ')', expecting '='
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 00:25:26 +0530
+
+LoadError (cannot load such file -- lib/tasks/email):
+  app/controllers/generic_orders_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 00:25:40 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (1.4ms)
+  Rendered generic_orders/_services.html.erb (30.5ms)
+  Rendered generic_orders/_footer.html.erb (6.9ms)
+  Rendered generic_orders/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-21 00:26:22 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-21 00:26:22 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  Rendered generic_orders/_header.html.erb (0.9ms)
+  Rendered generic_orders/_footer.html.erb (9.0ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (14.4ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=testing&coupon_code=none" for ::1 at 2015-09-21 00:26:31 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"testing", "coupon_code"=>"none"}
+  Rendered generic_orders/_header.html.erb (0.6ms)
+  Rendered generic_orders/_response.html.erb (0.3ms)
+  Rendered generic_orders/_footer.html.erb (5.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-21 00:26:46 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "address"=>"2/1 Rishi Apts, 4 Battery Lane", "phone"=>"9845664081", "email"=>"abhimanyu.jain@flipkart.com"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.7ms)
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/generic_orders_controller.rb:42:in `create'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.7ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-21 00:27:15 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "address"=>"2/1 Rishi Apts, 4 Battery Lane", "phone"=>"9845664081", "email"=>"abhimanyu.jain@flipkart.com"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.5ms)
+
+NameError (uninitialized class variable @@date in GenericOrdersController):
+  app/controllers/generic_orders_controller.rb:63:in `create'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.2ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=testing&coupon_code=none" for ::1 at 2015-09-21 00:32:51 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"testing", "coupon_code"=>"none"}
+  Rendered generic_orders/_header.html.erb (1.1ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered generic_orders/_footer.html.erb (7.3ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-21 00:32:57 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "address"=>"2/1 Rishi Apts, 4 Battery Lane", "phone"=>"8707", "email"=>"abhimanyu.jain@flipkart.com"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (22.0ms)[0m  [1mINSERT INTO "orders" ("name", "address", "phone", "email", "origin_of_request", "service", "initiated_on", "rating", "feedback", "amount", "vendor_id", "status", "booking_date", "booking_slot", "customer_comments", "coupon_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Abhimanyu Jain"], ["address", "2/1 Rishi Apts, 4 Battery Lane"], ["phone", 8707], ["email", "abhimanyu.jain@flipkart.com"], ["origin_of_request", "desktop browser"], ["service", "Electrical"], ["initiated_on", "2015-09-20 19:02:57.935085"], ["rating", 0], ["feedback", "nil"], ["amount", 0], ["vendor_id", 0], ["status", "Initiated"], ["booking_date", "2015-09-29"], ["booking_slot", "2000-01-01 10:00:00.000000"], ["customer_comments", "testing"], ["coupon_code", "none"]]
+  [1m[35m (3.4ms)[0m  COMMIT
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 25.5ms)
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/generic_orders_controller.rb:71:in `+'
+  app/controllers/generic_orders_controller.rb:71:in `create'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 00:34:16 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (0.9ms)
+  Rendered generic_orders/_services.html.erb (18.0ms)
+  Rendered generic_orders/_footer.html.erb (4.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/service_page_selection?service_name=Pest+Control" for ::1 at 2015-09-21 00:34:19 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Pest Control"}
+Redirected to http://localhost:3000/Pest%20Control
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Pest%20Control" for ::1 at 2015-09-21 00:34:19 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  Rendered generic_orders/_header.html.erb (1.1ms)
+  Rendered generic_orders/_footer.html.erb (20.3ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (26.2ms)
+Completed 200 OK in 113ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Personal_Info?date=2015-09-28&slot=10%3A00%3A00&customer_notes=test&coupon_code=test" for ::1 at 2015-09-21 00:34:25 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-28", "slot"=>"10:00:00", "customer_notes"=>"test", "coupon_code"=>"test"}
+  Rendered generic_orders/_header.html.erb (1.3ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered generic_orders/_footer.html.erb (4.9ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-21 00:34:30 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "address"=>"2/1 Rishi Apts, 4 Battery Lane", "phone"=>"98080", "email"=>"abhimanyu.jain@flipkart.com"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("name", "address", "phone", "email", "origin_of_request", "service", "initiated_on", "rating", "feedback", "amount", "vendor_id", "status", "booking_date", "booking_slot", "customer_comments", "coupon_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"  [["name", "Abhimanyu Jain"], ["address", "2/1 Rishi Apts, 4 Battery Lane"], ["phone", 98080], ["email", "abhimanyu.jain@flipkart.com"], ["origin_of_request", "desktop browser"], ["service", "Pest Control"], ["initiated_on", "2015-09-20 19:04:30.541566"], ["rating", 0], ["feedback", "nil"], ["amount", 0], ["vendor_id", 0], ["status", "Initiated"], ["booking_date", "2015-09-28"], ["booking_slot", "2000-01-01 10:00:00.000000"], ["customer_comments", "test"], ["coupon_code", "test"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 1422ms (Views: 0.8ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/generic_orders/create" for ::1 at 2015-09-21 01:00:54 +0530
+Processing by GenericOrdersController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[35mOrder Load (0.5ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 13ms (ActiveRecord: 3.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=create):
+  app/controllers/generic_orders_controller.rb:83:in `show'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.4ms)
+
+
+Started GET "/generic_orders/hhh" for ::1 at 2015-09-21 01:05:04 +0530
+Processing by GenericOrdersController#show as HTML
+  Parameters: {"id"=>"hhh"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 11ms (ActiveRecord: 3.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=hhh):
+  app/controllers/generic_orders_controller.rb:87:in `show'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.2ms)
+
+
+Started GET "/generic_orders/hhh" for ::1 at 2015-09-21 01:06:39 +0530
+
+ArgumentError ('generic_orders:hhh' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:32:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started GET "/generic_orders/hhh" for ::1 at 2015-09-21 01:06:49 +0530
+Processing by GenericOrdersController#show as HTML
+  Parameters: {"id"=>"hhh"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 9ms (ActiveRecord: 3.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=hhh):
+  app/controllers/generic_orders_controller.rb:87:in `show'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/hhh" for ::1 at 2015-09-21 01:07:35 +0530
+Processing by GenericOrdersController#hhh as HTML
+Redirected to 
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `create_url' for #<GenericOrdersController:0x007ff07835bb08>):
+  app/controllers/generic_orders_controller.rb:41:in `hhh'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 01:23:46 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (1.1ms)
+  Rendered generic_orders/_services.html.erb (20.8ms)
+  Rendered generic_orders/_footer.html.erb (7.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 217ms (Views: 214.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/generic_orders.self-8bcf9b0c5a9f6887b2f1f750a78c8e103fd89eafae16b2c177f637d8fb556e7e.css?body=1" for ::1 at 2015-09-21 01:23:46 +0530
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-21 01:23:47 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-21 01:23:47 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  Rendered generic_orders/_header.html.erb (0.6ms)
+  Rendered generic_orders/_footer.html.erb (6.7ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (9.8ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Personal_Info?date=2015-09-28&slot=10%3A00%3A00&customer_notes=test&coupon_code=test" for ::1 at 2015-09-21 01:23:53 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-28", "slot"=>"10:00:00", "customer_notes"=>"test", "coupon_code"=>"test"}
+  Rendered generic_orders/_header.html.erb (0.7ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered generic_orders/_footer.html.erb (4.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-21 01:23:58 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "address"=>"2/1 Rishi Apts, 4 Battery Lane", "phone"=>"987987", "email"=>";kjk;j"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("name", "address", "phone", "email", "origin_of_request", "service", "initiated_on", "rating", "feedback", "amount", "vendor_id", "status", "booking_date", "booking_slot", "customer_comments", "coupon_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"  [["name", "Abhimanyu Jain"], ["address", "2/1 Rishi Apts, 4 Battery Lane"], ["phone", 987987], ["email", ";kjk;j"], ["origin_of_request", "desktop browser"], ["service", "Electrical"], ["initiated_on", "2015-09-20 19:53:58.396117"], ["rating", 0], ["feedback", "nil"], ["amount", 0], ["vendor_id", 0], ["status", "Initiated"], ["booking_date", "2015-09-28"], ["booking_slot", "2000-01-01 10:00:00.000000"], ["customer_comments", "test"], ["coupon_code", "test"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  Rendered generic_orders/_header.html.erb (0.9ms)
+  Rendered generic_orders/_footer.html.erb (7.2ms)
+  Rendered generic_orders/create.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 91ms (Views: 55.0ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/generic_orders" for ::1 at 2015-09-21 02:10:34 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (18.5ms)
+  Rendered generic_orders/_services.html.erb (23.2ms)
+  Rendered generic_orders/_footer.html.erb (9.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 459ms (Views: 456.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/generic_orders.self-99ed04ac4404ed5bc44c8494b9333e10748e76119b253d4d27b08112a795c3fe.css?body=1" for ::1 at 2015-09-21 02:10:34 +0530
+
+
+Started GET "/assets/generic_orders.self-a0557c979360dcf23325c478ee97833febd5cbf300068ecac2d654e4a5e95624.js?body=1" for ::1 at 2015-09-21 02:10:34 +0530
+
+
+Started GET "/assets/logo-0b7a096820348636e016036623f409a71d098db94b14a957cb00f0321d8e9d87.jpg" for ::1 at 2015-09-21 02:10:34 +0530
+
+
+Started GET "/" for ::1 at 2015-09-21 02:10:37 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (3.0ms)
+  Rendered generic_orders/_services.html.erb (17.2ms)
+  Rendered generic_orders/_footer.html.erb (5.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 71ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:11:25 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (4.7ms)
+  Rendered generic_orders/_services.html.erb (30.2ms)
+  Rendered generic_orders/_footer.html.erb (11.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 133ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:17:15 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (3.6ms)
+  Rendered generic_orders/_services.html.erb (18.8ms)
+  Rendered generic_orders/_footer.html.erb (7.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 78ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:18:36 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (3.4ms)
+  Rendered generic_orders/_services.html.erb (12.6ms)
+  Rendered generic_orders/_footer.html.erb (4.6ms)
+  Rendered generic_orders/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:21:07 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (3.9ms)
+  Rendered generic_orders/_services.html.erb (19.4ms)
+  Rendered generic_orders/_footer.html.erb (8.2ms)
+  Rendered generic_orders/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 84ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:23:32 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (2.5ms)
+  Rendered generic_orders/_services.html.erb (29.4ms)
+  Rendered generic_orders/_footer.html.erb (18.4ms)
+  Rendered generic_orders/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 215ms (Views: 214.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/generic_orders.self-85a108f40cf24f0cee732cbfa24612023d28cb312e9193149de119926722a343.css?body=1" for ::1 at 2015-09-21 02:23:33 +0530
+
+
+Started GET "/" for ::1 at 2015-09-21 02:24:21 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (2.3ms)
+  Rendered generic_orders/_services.html.erb (20.0ms)
+  Rendered generic_orders/_footer.html.erb (6.0ms)
+  Rendered generic_orders/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 192ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/generic_orders.self-98037824d6d309f10e17714552aa42caae33d46a107214983e8f7622109205c8.css?body=1" for ::1 at 2015-09-21 02:24:21 +0530
+
+
+Started GET "/" for ::1 at 2015-09-21 02:27:07 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (4.3ms)
+  Rendered generic_orders/_services.html.erb (16.9ms)
+  Rendered generic_orders/_footer.html.erb (5.0ms)
+  Rendered generic_orders/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:27:35 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (3.0ms)
+  Rendered generic_orders/_services.html.erb (15.1ms)
+  Rendered generic_orders/_footer.html.erb (5.2ms)
+  Rendered generic_orders/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 73ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:28:00 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (2.1ms)
+  Rendered generic_orders/_services.html.erb (15.5ms)
+  Rendered generic_orders/_footer.html.erb (5.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 171ms (Views: 170.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/generic_orders.self-6f94ba247dcc9c33eb444dea8da23cdbbb09dfa7585fdbad906bbb5b15bcee49.css?body=1" for ::1 at 2015-09-21 02:28:00 +0530
+
+
+Started GET "/" for ::1 at 2015-09-21 02:28:39 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (1.8ms)
+  Rendered generic_orders/_services.html.erb (12.2ms)
+  Rendered generic_orders/_footer.html.erb (4.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:31:13 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (2.8ms)
+  Rendered generic_orders/_services.html.erb (14.1ms)
+  Rendered generic_orders/_footer.html.erb (4.6ms)
+  Rendered generic_orders/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/generic_orders" for ::1 at 2015-09-21 02:31:19 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (45.0ms)
+  Rendered generic_orders/_services.html.erb (69.4ms)
+  Rendered generic_orders/_footer.html.erb (16.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (170.9ms)
+Completed 200 OK in 299ms (Views: 298.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/generic_orders" for ::1 at 2015-09-21 02:32:49 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (3.5ms)
+  Rendered generic_orders/_services.html.erb (14.0ms)
+  Rendered generic_orders/_footer.html.erb (5.6ms)
+  Rendered generic_orders/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:32:52 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (2.1ms)
+  Rendered generic_orders/_services.html.erb (18.9ms)
+  Rendered generic_orders/_footer.html.erb (5.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:33:25 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (2.9ms)
+  Rendered generic_orders/_services.html.erb (16.3ms)
+  Rendered generic_orders/_footer.html.erb (5.5ms)
+  Rendered generic_orders/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:34:22 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_header.html.erb (4.9ms)
+  Rendered generic_orders/_services.html.erb (16.3ms)
+  Rendered generic_orders/_footer.html.erb (7.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 78ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-21 02:37:42 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendered users/_header.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered generic_orders/_footer.html.erb (6.3ms)
+  Rendered users/registrations/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 144ms (Views: 59.9ms | ActiveRecord: 73.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:43:21 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial generic_orders/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/abhimanyu.jain/practice/app/views"
+  * "/Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/devise-3.5.2/app/views"
+):
+    3: <body>
+    4: <p hidden>SendGrid</p>
+    5: 
+    6: <%= render 'header' %>
+    7: 
+    8: <%=   if cookies[:city] == nil
+    9:         render 'city_selector'
+  app/views/generic_orders/index.html.erb:6:in `_app_views_generic_orders_index_html_erb___4472466807482551826_70335431767640'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:43:21 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial generic_orders/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/abhimanyu.jain/practice/app/views"
+  * "/Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/devise-3.5.2/app/views"
+):
+    3: <body>
+    4: <p hidden>SendGrid</p>
+    5: 
+    6: <%= render 'header' %>
+    7: 
+    8: <%=   if cookies[:city] == nil
+    9:         render 'city_selector'
+  app/views/generic_orders/index.html.erb:6:in `_app_views_generic_orders_index_html_erb___4472466807482551826_70335431767640'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:49:00 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered application/_header.html.erb (3.6ms)
+  Rendered generic_orders/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:47: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...arams[:controller] != 'users' );@output_buffer.safe_append='
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:58: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:93: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/application/_header.html.erb:47: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/application/_header.html.erb:58: syntax error, unexpected keyword_end
+  app/views/application/_header.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/application/_header.html.erb:93: syntax error, unexpected keyword_end, expecting ')'
+  app/views/generic_orders/index.html.erb:6:in `_app_views_generic_orders_index_html_erb___4472466807482551826_70335431767640'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:49:43 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered application/_header.html.erb (2.0ms)
+  Rendered generic_orders/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:58: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abhimanyu.jain/practice/app/views/application/_header.html.erb:93: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/application/_header.html.erb:58: syntax error, unexpected keyword_end
+  app/views/application/_header.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/application/_header.html.erb:93: syntax error, unexpected keyword_end, expecting ')'
+  app/views/generic_orders/index.html.erb:6:in `_app_views_generic_orders_index_html_erb___4472466807482551826_70335431767640'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:49:50 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered application/_header.html.erb (4.5ms)
+  Rendered generic_orders/_services.html.erb (20.0ms)
+  Rendered application/_footer.html.erb (6.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 76ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-21 02:51:49 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendered users/registrations/new.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial users/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/abhimanyu.jain/practice/app/views"
+  * "/Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/devise-3.5.2/app/views"
+):
+    1: <%= render 'users/header' %>
+    2: 
+    3: <div class="panel panel-primary" id="devise_panel">
+    4:   <div class="panel-heading">
+  app/views/users/registrations/new.html.erb:1:in `_app_views_users_registrations_new_html_erb__2167290185336230639_70335348167400'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-21 02:51:49 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendered users/registrations/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial users/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/abhimanyu.jain/practice/app/views"
+  * "/Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/devise-3.5.2/app/views"
+):
+    1: <%= render 'users/header' %>
+    2: 
+    3: <div class="panel panel-primary" id="devise_panel">
+    4:   <div class="panel-heading">
+  app/views/users/registrations/new.html.erb:1:in `_app_views_users_registrations_new_html_erb__2167290185336230639_70335348167400'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-21 02:53:02 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendered application/_header.html.erb (20.7ms)
+  Rendered users/registrations/new.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `img_src' for #<#<Class:0x007ff072e2fc10>:0x007ff0731ffd18>):
+    35:                   <%= link_to 'Services', "#", :class => 'header-link white_text' %>
+    36:                 </h5>
+    37:                 <ul class="dropdown-menu dropdown-menu-left">
+    38:                   <% img_src.each do |key,value| %>
+    39:                       <li><%= link_to key, key %></li>
+    40:                   <% end %>
+    41:                 </ul>
+  app/views/application/_header.html.erb:38:in `_app_views_application__header_html_erb___3292459252916444045_70335375274520'
+  app/views/users/registrations/new.html.erb:1:in `_app_views_users_registrations_new_html_erb__2167290185336230639_70335350174780'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-21 02:54:27 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendered application/_header.html.erb (26.7ms)
+  Rendered users/registrations/new.html.erb within layouts/application (30.1ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 29.2ms)
+
+ActionView::Template::Error (undefined local variable or method `img_src' for #<#<Class:0x007ff07876b4a0>:0x007ff078768cc8>):
+    35:                   <%= link_to 'Services', "#", :class => 'header-link white_text' %>
+    36:                 </h5>
+    37:                 <ul class="dropdown-menu dropdown-menu-left">
+    38:                   <% img_src.each do |key,value| %>
+    39:                       <li><%= link_to key, key %></li>
+    40:                   <% end %>
+    41:                 </ul>
+  app/views/application/_header.html.erb:38:in `_app_views_application__header_html_erb___3292459252916444045_70335375274520'
+  app/views/users/registrations/new.html.erb:1:in `_app_views_users_registrations_new_html_erb__2167290185336230639_70335394940640'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-21 02:56:29 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendered application/_header.html.erb (2.8ms)
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered application/_footer.html.erb (7.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 81ms (Views: 71.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:57:16 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered application/_header.html.erb (4.9ms)
+  Rendered generic_orders/_services.html.erb (24.3ms)
+  Rendered application/_footer.html.erb (4.9ms)
+  Rendered generic_orders/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-21 02:58:01 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered application/_header.html.erb (5.3ms)
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered application/_footer.html.erb (10.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 02:59:58 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered application/_header.html.erb (3.8ms)
+  Rendered generic_orders/_services.html.erb (20.6ms)
+  Rendered application/_footer.html.erb (7.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 03:00:47 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered application/_header.html.erb (3.1ms)
+  Rendered generic_orders/_services.html.erb (18.3ms)
+  Rendered application/_footer.html.erb (5.1ms)
+  Rendered generic_orders/index.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 73ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-21 03:00:49 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered application/_header.html.erb (2.2ms)
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered application/_footer.html.erb (9.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-21 03:01:11 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered application/_header.html.erb (2.6ms)
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered application/_footer.html.erb (9.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-21 03:01:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered application/_header.html.erb (2.4ms)
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered application/_footer.html.erb (7.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
