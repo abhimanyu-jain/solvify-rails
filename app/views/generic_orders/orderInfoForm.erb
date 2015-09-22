@@ -7,18 +7,18 @@
 
 <%= render 'header'%>
 
-<body>
+<body id=<%= cookies[:service]%>>
 <div class="spacer container"></div>
 <div class="spacer container">
   <div class="row">
     <div class="col-md-1"></div>
 
     <div class="col-md-6">
-      <%= image_tag(@img, alt: cookies[:service], class: "center-block service_image") %>
-      <h1 class="center"><%= cookies[:service] %></h1><br><br>
+      <h1 class="center"><%= cookies[:service] %></h1><br>
       <h4 class="center">
         <%= @tag_line %>
-      </h4>
+      </h4><br/>
+      <%= image_tag(@img, alt: cookies[:service], class: "center-block landing_page_main_image") %>
     </div>
 
     <div class="col-md-1"></div>

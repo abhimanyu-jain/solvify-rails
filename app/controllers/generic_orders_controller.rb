@@ -51,7 +51,7 @@ class GenericOrdersController < ApplicationController
     "<br/><br/>Thank You" +
     "<br/>Team Solvify" +
     "<br/>8884253299"
-    #sendMail to, from, subject, body
+    sendMail to, from, subject, body
   end
 
   def show

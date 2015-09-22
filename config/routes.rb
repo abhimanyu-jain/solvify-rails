@@ -30,6 +30,9 @@ Rails.application.routes.draw do
   get 'set_city' => 'generic_orders#set_city'
   get 'MyOrders' => 'generic_orders#displayUserOrders', as: :myOrders
   get 'hhh' => 'generic_orders#hhh'
+  post 'api/create' => 'api#create'
+  post 'api/cancel_order' => 'api#cancel_order'
+  post 'api/get_all' => 'api#get_all'
 
   post 'changeStatus' => 'admin#changeStatus'
 
