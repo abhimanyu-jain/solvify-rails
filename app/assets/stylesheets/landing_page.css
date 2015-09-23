@@ -28,7 +28,7 @@ body { margin: 50px;}
 .footer {text-align: center;}
 .grey {background-color: #f5f6f6; width: 100%;}
 #service_name {width: 250px; margin-left: auto; margin-right: auto;}
-#locality {width: 250px; margin-left: auto; margin-right: auto;}
+/*#locality {width: 250px; margin-left: auto; margin-right: auto;}*/
 .Error_Text {text-align: center; color: red; font-size: 15px;}
 .numeric { height: 120px; width: 120px;}
 #navbar_title {display:inline-block;}

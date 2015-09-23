@@ -4,6 +4,14 @@ class ApiController < ApplicationController
 
   def create
     @order = Order.new(order_params)
+    @order[:origin_of_request] = "Mobile App"
+    @order[:initiated_on] = DateTime.now
+    @order[:rating] = 0
+    @order[:feedback] = 'nil'
+    @order[:amount] = 0
+    @order[:vendor_id] = 0
+    @order[:status] = 'Initiated'
+
     @order.save
     to = @order[:email]
     from = "donotreply@solvify.in"
@@ -43,7 +51,7 @@ class ApiController < ApplicationController
   private
 
   def order_params
-    params.permit(:customer_id, :service, :booking_date, :booking_slot, :customer_comments, :name, :address, :phone, :email)
+    params.permit(:customer_id, :service, :booking_date, :booking_slot, :customer_comments, :name, :address, :phone, :email, :coupon_code)
   end
 
 end

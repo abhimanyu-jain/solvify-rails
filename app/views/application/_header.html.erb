@@ -4,10 +4,14 @@
             $(".navbar-collapse").collapse('hide');
         });
 
-        $("#set_city").click(function() { window.location= "/set_city"});
+        $("#set_city").click(function() {
+            $('#city').modal('toggle');
+         });
 
     });
 </script>
+
+<%= render 'city_selector' %>
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">

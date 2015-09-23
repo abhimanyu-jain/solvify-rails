@@ -17,12 +17,15 @@ class GenericOrdersController < ApplicationController
     @order = Order.new(order_params)
     if current_user != nil
       @order[:customer_id] = current_user.id
+      @order[:email] = current_user.email
+    else
+      @order[:email] = params[:email]
     end
 
     if browser.mobile?
-      @order[:origin_of_request] = "mobile browser"
+      @order[:origin_of_request] = "Mobile Browser"
     else
-      @order[:origin_of_request] = "desktop browser"
+      @order[:origin_of_request] = "Desktop Browser"
     end
 
     @order[:service] = cookies[:service]
@@ -33,13 +36,12 @@ class GenericOrdersController < ApplicationController
     @order[:vendor_id] = 0
     @order[:status] = 'Initiated'
     @order[:name] = params[:name]
-    @order[:address] = params[:address]
+    @order[:address] = params[:house] + ", " + params[:street] + ", " + (params[:city]?params[:city]:cookies[:city]) + ", " + params[:pincode]
     @order[:phone] = params[:phone]
-    @order[:email] = params[:email]
-    @order[:booking_date] = @@date
-    @order[:booking_slot] = @@slot
-    @order[:customer_comments] = @@customer_notes
-    @order[:coupon_code] = @@coupon_code
+    @order[:booking_date] = cookies[:date]
+    @order[:booking_slot] = cookies[:slot]
+    @order[:customer_comments] = cookies[:customer_notes]
+    @order[:coupon_code] = cookies[:coupon_code]
     @order.save
     to = @order[:email]
     from = "donotreply@solvify.in"
@@ -76,10 +78,10 @@ class GenericOrdersController < ApplicationController
   end
 
   def personal
-    @@date = params[:date]
-    @@slot = params[:slot]
-    @@customer_notes = params[:customer_notes]
-    @@coupon_code = params[:coupon_code]
+    cookies[:date] = params[:date]
+    cookies[:slot] = params[:slot]
+    cookies[:customer_notes] = params[:customer_notes]
+    cookies[:coupon_code] = params[:coupon_code]
   end
 
   def orderInfoForm

@@ -55065,3 +55065,1197 @@ Completed 200 OK in 201ms (Views: 148.1ms | ActiveRecord: 47.6ms)
 
 
 Started GET "/assets/carpenter-fd2db3ff3b5b0827c3ce4db61053f02af16f3e961bf8fce8eb3c7800a5da4f32.jpg" for ::1 at 2015-09-23 03:26:23 +0530
+
+
+Started GET "/Computer%20Repair" for ::1 at 2015-09-23 10:24:51 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (30.7ms)
+  Rendered application/_footer.html.erb (19.3ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (66.2ms)
+Completed 200 OK in 168ms (Views: 157.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/computer-9123902af68016f826efe803d505c4e50b33a1707226968e2eec261355fa8480.jpg" for ::1 at 2015-09-23 10:24:51 +0530
+
+
+Started GET "/" for ::1 at 2015-09-23 23:54:46 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (2.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (115.2ms)
+  Rendered generic_orders/_services.html.erb (40.0ms)
+  Rendered application/_footer.html.erb (24.7ms)
+  Rendered generic_orders/index.html.erb within layouts/application (219.1ms)
+Completed 200 OK in 320ms (Views: 260.0ms | ActiveRecord: 50.3ms)
+
+
+Started GET "/assets/devise.self-9d1864043af8fd1562f3f317c22c2db73fa4e83dde1fcbdfa649ca4f6d702d01.css?body=1" for ::1 at 2015-09-23 23:54:47 +0530
+
+
+Started GET "/set_city" for ::1 at 2015-09-23 23:54:49 +0530
+Processing by GenericOrdersController#set_city as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (8.2ms)
+  Rendered generic_orders/_services.html.erb (88.1ms)
+  Rendered application/_footer.html.erb (7.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 168ms (Views: 164.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/set_city" for ::1 at 2015-09-23 23:54:51 +0530
+Processing by GenericOrdersController#set_city as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (4.4ms)
+  Rendered generic_orders/_services.html.erb (37.6ms)
+  Rendered application/_footer.html.erb (7.5ms)
+  Rendered generic_orders/index.html.erb within layouts/application (57.3ms)
+Completed 200 OK in 134ms (Views: 130.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/set_city" for ::1 at 2015-09-23 23:54:53 +0530
+Processing by GenericOrdersController#set_city as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (9.4ms)
+  Rendered generic_orders/_services.html.erb (46.4ms)
+  Rendered application/_footer.html.erb (13.5ms)
+  Rendered generic_orders/index.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 134ms (Views: 131.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-23 23:58:41 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (20.8ms)
+  Rendered generic_orders/_city_selector.html.erb (0.3ms)
+  Rendered generic_orders/_services.html.erb (17.1ms)
+  Rendered application/_footer.html.erb (6.4ms)
+  Rendered generic_orders/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 129ms (Views: 121.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-23 23:58:41 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.5ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (16.5ms)
+  Rendered application/_footer.html.erb (6.4ms)
+  Rendered generic_orders/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/set_city?cities=Bangalore" for ::1 at 2015-09-23 23:58:45 +0530
+
+ActionController::RoutingError (No route matches [GET] "/set_city"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-23 23:59:20 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (20.3ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (16.4ms)
+  Rendered application/_footer.html.erb (6.5ms)
+  Rendered generic_orders/index.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 97ms (Views: 91.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/set_city?cities=Bangalore" for ::1 at 2015-09-23 23:59:24 +0530
+
+ActionController::RoutingError (No route matches [GET] "/set_city"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhimanyu.jain/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-23 23:59:32 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (23.5ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (16.6ms)
+  Rendered application/_footer.html.erb (5.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 99ms (Views: 89.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/set_city?cities=Bangalore" for ::1 at 2015-09-23 23:59:35 +0530
+Processing by GenericOrdersController#set_city as HTML
+  Parameters: {"cities"=>"Bangalore"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template generic_orders/generic_orders, application/generic_orders with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/abhimanyu.jain/practice/app/views"
+  * "/Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/devise-3.5.2/app/views"
+):
+  app/controllers/generic_orders_controller.rb:107:in `set_city'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (22.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 00:00:07 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (38.5ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (19.7ms)
+  Rendered application/_footer.html.erb (6.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 127ms (Views: 117.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 00:00:07 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.4ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (16.6ms)
+  Rendered application/_footer.html.erb (6.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/set_city?cities=Bangalore" for ::1 at 2015-09-24 00:00:09 +0530
+Processing by GenericOrdersController#set_city as HTML
+  Parameters: {"cities"=>"Bangalore"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (5.5ms)
+  Rendered generic_orders/_city_selector.html.erb (0.1ms)
+  Rendered generic_orders/_services.html.erb (44.7ms)
+  Rendered application/_footer.html.erb (11.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 120ms (Views: 119.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 00:03:00 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (30.3ms)
+  Rendered generic_orders/_city_selector.html.erb (0.1ms)
+  Rendered generic_orders/_services.html.erb (26.9ms)
+  Rendered application/_footer.html.erb (5.5ms)
+  Rendered generic_orders/index.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 13134ms (Views: 114.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 00:03:20 +0530
+Processing by GenericOrdersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.8ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (22.2ms)
+  Rendered application/_footer.html.erb (18.3ms)
+  Rendered generic_orders/index.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 2247ms (Views: 92.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/set_city?cities=Bangalore" for ::1 at 2015-09-24 00:03:26 +0530
+Processing by GenericOrdersController#set_city as HTML
+  Parameters: {"cities"=>"Bangalore"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.8ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (24.8ms)
+  Rendered application/_footer.html.erb (6.2ms)
+  Rendered generic_orders/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 8707ms (Views: 126.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/set_city?cities=Gurgaon" for ::1 at 2015-09-24 00:03:42 +0530
+Processing by GenericOrdersController#set_city as HTML
+  Parameters: {"cities"=>"Gurgaon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (4.3ms)
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered generic_orders/_services.html.erb (28.6ms)
+  Rendered application/_footer.html.erb (7.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 2371ms (Views: 108.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-24 00:03:48 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-24 00:03:48 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (15.7ms)
+  Rendered application/_footer.html.erb (30.2ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (58.9ms)
+Completed 200 OK in 185ms (Views: 183.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/electrical-566bc75a8bf1cd8e9d6d878156e640cae743def7af4758ac9e2861792a6c9214.png" for ::1 at 2015-09-24 00:03:49 +0530
+
+
+Started GET "/Electrical" for ::1 at 2015-09-24 00:19:19 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (21.2ms)
+  Rendered application/_footer.html.erb (5.3ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (30.6ms)
+Completed 200 OK in 68ms (Views: 62.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:19:26 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/personal.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:28: syntax error, unexpected ')', expecting keyword_end
+...!= nil then current_user.email);@output_buffer.safe_append='
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:71: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:73: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/generic_orders/personal.html.erb:28: syntax error, unexpected ')', expecting keyword_end
+  app/views/generic_orders/personal.html.erb:71: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/generic_orders/personal.html.erb:73: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.0ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:19:37 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.2ms)
+  Rendered generic_orders/_response.html.erb (0.4ms)
+  Rendered application/_footer.html.erb (5.3ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/application.self-c4991312985bccd133f1f21ab2f6a5d0129a8416a91037313b14f05d7d2e7dde.css?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/generic_orders.self-ce3cbb8671bff8ea07d89e48daf415e81f28a0590c39c7b499431ff31f0cc506.css?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/devise.self-9d1864043af8fd1562f3f317c22c2db73fa4e83dde1fcbdfa649ca4f6d702d01.css?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/landing_page.self-219acf27762438bbf7d334bc7a13c1c0bb5e904fa5336ab9d17940dd9a92e2ca.css?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/generic_orders.self-a0557c979360dcf23325c478ee97833febd5cbf300068ecac2d654e4a5e95624.js?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/logo-0b7a096820348636e016036623f409a71d098db94b14a957cb00f0321d8e9d87.jpg" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/fb_icon-983d20d7ab22f6702784a58920ceeeaa4ff6b5043213cd98bd44d5fb6fdd1345.png" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/twt_icon-267e710525fc4e295e50aa93525a94b3146f594c8951152a48ae711ade14f542.png" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/whatsapp-28c0257172c2bbb3f13805d7fa80e4eb836a041fd9a46c0c170043950a11727b.png" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/assets/android_app-db2e4a861cd472253294f8fbaac8bcef6784526ab0b8de153a117a6796ca2996.png" for ::1 at 2015-09-24 00:19:37 +0530
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:21:50 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (5.9ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (13.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:24:35 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (5.3ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `stringify_keys' for "Admin":String):
+    25:       <form action="/generic_orders" method="post">
+    26:         <div class="form-group">
+    27:           <label for="message-text" class="control-label">Name:</label>
+    28:           <%= text_field_tag "Customer-Name", 'name', if current_user != nil then current_user.username end %>
+    29:         </div>
+    30: 
+    31:         <div id="name_error" class="Error_Text"></div>
+  app/views/generic_orders/personal.html.erb:28:in `_app_views_generic_orders_personal_html_erb__3992924454087425197_70288740625900'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.1ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:25:00 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.8ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.3ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:26:50 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/personal.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:26: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...pend=( if current_user == nil );@output_buffer.safe_append='
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:31: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:72: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:74: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/generic_orders/personal.html.erb:26: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/generic_orders/personal.html.erb:31: syntax error, unexpected keyword_end
+  app/views/generic_orders/personal.html.erb:72: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/generic_orders/personal.html.erb:74: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.5ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:27:24 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (4.3ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.9ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:27:56 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/personal.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:26: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...pend=( if current_user == nil );@output_buffer.safe_append='
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:27: syntax error, unexpected keyword_then
+...ze;@output_buffer.append=( then );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:32: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:73: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:75: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/generic_orders/personal.html.erb:26: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/generic_orders/personal.html.erb:27: syntax error, unexpected keyword_then
+  app/views/generic_orders/personal.html.erb:32: syntax error, unexpected keyword_end
+  app/views/generic_orders/personal.html.erb:73: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/generic_orders/personal.html.erb:75: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.2ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:28:13 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (4.2ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (5.3ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:43:50 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (4.3ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.7ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:44:27 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (4.0ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.2ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:45:07 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.1ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (7.8ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:45:36 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.7ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (6.7ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:47:10 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.7ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `number' for #<#<Class:0x007fdab9a3d248>:0x007fdac3871e78>):
+    35:           <%= text_field_tag 'house', nil, placeholder: 'House No.' %>
+    36:           <%= text_field_tag 'street', nil,  placeholder: 'Street' %>
+    37:           <%= text_field_tag 'locality', nil,  placeholder: 'Locality' %>
+    38:           <%= text_field_tag 'pincode', nil, placeholder: 'Pincode', type: number %>
+    39: 
+    40:           <textarea class="form-control" id="House" name="house" required></textarea>
+    41:         </div>
+  app/views/generic_orders/personal.html.erb:38:in `_app_views_generic_orders_personal_html_erb__3992924454087425197_70288780002640'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.5ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:47:23 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (4.7ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (7.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:51:36 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (4.9ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (wrong number of arguments (4 for 1..3)):
+    32: 
+    33:         <div class="form-group">
+    34:           <label for="message-text" class="control-label">Address:</label>
+    35:           <%= text_field_tag 'form-control', 'house', nil, placeholder: 'House No.' %>
+    36:           <%= text_field_tag 'street', nil,  placeholder: 'Street' %>
+    37:           <%= text_field_tag 'locality', nil,  placeholder: 'Locality' %>
+    38:           <%= text_field_tag 'pincode', nil, placeholder: 'Pincode', type: "number" %>
+  app/views/generic_orders/personal.html.erb:35:in `_app_views_generic_orders_personal_html_erb__3992924454087425197_70288765105160'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.9ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:52:15 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.2ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (8.2ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:52:45 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.6ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (5.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:54:00 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (7.4ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (10.2ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 116ms (Views: 114.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:55:29 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (5.8ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (6.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:56:01 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (8.2ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (14.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:56:32 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (5.0ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (5.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:56:47 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (4.0ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:56:58 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (3.2ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (7.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:58:26 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.2ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (6.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 00:58:59 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (4.2ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:02:03 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.3ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (7.1ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:04:45 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (6.4ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (9.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 229ms (Views: 227.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/generic_orders.self-6f69ea2030cf84f709bcc314b3b4438765ec38814b07ef488b0899c697b3f5d6.js?body=1" for ::1 at 2015-09-24 01:04:45 +0530
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:05:27 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.0ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (10.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 318ms (Views: 317.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/landing_page.self-032f8817310a1d4b49690952b3307c34952539cd2bd517609fdf5310c9a872c3.css?body=1" for ::1 at 2015-09-24 01:05:27 +0530
+
+
+Started GET "/assets/generic_orders.self-682ec203aadd3d2748a1fcbce28fe2192448037466b45f2cf293a58084f06c80.js?body=1" for ::1 at 2015-09-24 01:05:27 +0530
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:13:38 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (6.1ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (8.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:14:21 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.1ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (8.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:14:48 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (5.3ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (6.0ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 118ms (Views: 117.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:15:23 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.2ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.5ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:21:26 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (18.4ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.4ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 68ms (Views: 62.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:23:06 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/personal.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:37: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...nd=( if cookies[:city] == nil );@output_buffer.safe_append='
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:39: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:80: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/generic_orders/personal.html.erb:37: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/generic_orders/personal.html.erb:39: syntax error, unexpected keyword_end
+  app/views/generic_orders/personal.html.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/generic_orders/personal.html.erb:80: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:23:22 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/personal.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:39: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/abhimanyu.jain/practice/app/views/generic_orders/personal.html.erb:80: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/generic_orders/personal.html.erb:39: syntax error, unexpected keyword_end
+  app/views/generic_orders/personal.html.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/generic_orders/personal.html.erb:80: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.2ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:23:28 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (3.3ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (5.6ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-29&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:24:19 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-29", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (4.9ms)
+  Rendered generic_orders/_response.html.erb (0.0ms)
+  Rendered application/_footer.html.erb (8.4ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/set_city?cities=Bangalore" for ::1 at 2015-09-24 01:24:21 +0530
+Processing by GenericOrdersController#set_city as HTML
+  Parameters: {"cities"=>"Bangalore"}
+  Rendered generic_orders/_city_selector.html.erb (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (6.5ms)
+  Rendered generic_orders/_services.html.erb (26.4ms)
+  Rendered application/_footer.html.erb (5.8ms)
+  Rendered generic_orders/index.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-24 01:24:25 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-24 01:24:25 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  Rendered generic_orders/_city_selector.html.erb (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (8.6ms)
+  Rendered application/_footer.html.erb (7.3ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (21.9ms)
+Completed 200 OK in 133ms (Views: 132.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/Personal_Info?date=2015-09-27&slot=10%3A00%3A00&customer_notes=&coupon_code=" for ::1 at 2015-09-24 01:24:29 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-27", "slot"=>"10:00:00", "customer_notes"=>"", "coupon_code"=>""}
+  Rendered generic_orders/_city_selector.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (5.9ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (7.7ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-24 01:24:59 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "house"=>"2/1 Rishi Apts, 4 Battery Lane", "street"=>"test", "pincode"=>"110054", "phone"=>"346463"}
+Unpermitted parameters: house, street, pincode
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (42.4ms)[0m  [1mINSERT INTO "orders" ("name", "phone", "customer_id", "email", "origin_of_request", "service", "initiated_on", "rating", "feedback", "amount", "vendor_id", "status", "booking_date", "booking_slot", "customer_comments", "coupon_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Abhimanyu Jain"], ["phone", 346463], ["customer_id", 1], ["email", "sage76enator@gmail.com"], ["origin_of_request", "Desktop Browser"], ["service", "Electrical"], ["initiated_on", "2015-09-23 19:54:59.310602"], ["rating", 0], ["feedback", "nil"], ["amount", 0], ["vendor_id", 0], ["status", "Initiated"], ["booking_date", "2015-09-27"], ["booking_slot", "2000-01-01 10:00:00.000000"], ["customer_comments", ""], ["coupon_code", ""]]
+  [1m[35m (3.5ms)[0m  COMMIT
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered application/_header.html.erb (3.0ms)
+  Rendered application/_footer.html.erb (6.2ms)
+  Rendered generic_orders/create.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 3353ms (Views: 73.1ms | ActiveRecord: 55.4ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-24 01:28:11 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "house"=>"2/1 Rishi Apts, 4 Battery Lane", "street"=>"test", "pincode"=>"110054", "phone"=>"346463"}
+Unpermitted parameters: house, street, pincode
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("name", "phone", "customer_id", "email", "origin_of_request", "service", "initiated_on", "rating", "feedback", "amount", "vendor_id", "status", "booking_date", "booking_slot", "customer_comments", "coupon_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Abhimanyu Jain"], ["phone", 346463], ["customer_id", 1], ["email", "sage76enator@gmail.com"], ["origin_of_request", "Desktop Browser"], ["service", "Electrical"], ["initiated_on", "2015-09-23 19:58:11.083514"], ["rating", 0], ["feedback", "nil"], ["amount", 0], ["vendor_id", 0], ["status", "Initiated"], ["booking_date", "2015-09-27"], ["booking_slot", "2000-01-01 10:00:00.000000"], ["customer_comments", ""], ["coupon_code", ""]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  Rendered application/_header.html.erb (2.4ms)
+  Rendered application/_footer.html.erb (10.0ms)
+  Rendered generic_orders/create.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 19102ms (Views: 209.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/devise.self-9d1864043af8fd1562f3f317c22c2db73fa4e83dde1fcbdfa649ca4f6d702d01.css?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/application.self-c4991312985bccd133f1f21ab2f6a5d0129a8416a91037313b14f05d7d2e7dde.css?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/generic_orders.self-ce3cbb8671bff8ea07d89e48daf415e81f28a0590c39c7b499431ff31f0cc506.css?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/generic_orders.self-6d9826ef129ed01178f005347a12f6e5e4e0910fb62415afe5a4c2001ed2fd20.js?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/landing_page.self-032f8817310a1d4b49690952b3307c34952539cd2bd517609fdf5310c9a872c3.css?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/logo-0b7a096820348636e016036623f409a71d098db94b14a957cb00f0321d8e9d87.jpg" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/fb_icon-983d20d7ab22f6702784a58920ceeeaa4ff6b5043213cd98bd44d5fb6fdd1345.png" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/twt_icon-267e710525fc4e295e50aa93525a94b3146f594c8951152a48ae711ade14f542.png" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/whatsapp-28c0257172c2bbb3f13805d7fa80e4eb836a041fd9a46c0c170043950a11727b.png" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/assets/android_app-db2e4a861cd472253294f8fbaac8bcef6784526ab0b8de153a117a6796ca2996.png" for ::1 at 2015-09-24 01:28:30 +0530
+
+
+Started GET "/" for ::1 at 2015-09-24 01:33:16 +0530
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (83.8ms)
+  Rendered generic_orders/_services.html.erb (14.3ms)
+  Rendered application/_footer.html.erb (5.6ms)
+  Rendered generic_orders/index.html.erb within layouts/application (110.4ms)
+Completed 200 OK in 147ms (Views: 142.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/service_page_selection?service_name=House+Cleaning" for ::1 at 2015-09-24 01:33:21 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"House Cleaning"}
+Redirected to http://localhost:3000/House%20Cleaning
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/House%20Cleaning" for ::1 at 2015-09-24 01:33:21 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  Rendered generic_orders/_city_selector.html.erb (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (13.4ms)
+  Rendered application/_footer.html.erb (10.9ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (34.1ms)
+Completed 200 OK in 114ms (Views: 112.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cleaning-1330f883f0f581e593177bd85564accd1e66f7dce2d3bb9c3d5272399740b86d.jpg" for ::1 at 2015-09-24 01:33:21 +0530
+
+
+Started GET "/Personal_Info?date=2015-09-27&slot=10%3A00%3A00&customer_notes=testing12&coupon_code=testing" for ::1 at 2015-09-24 01:34:10 +0530
+Processing by GenericOrdersController#personal as HTML
+  Parameters: {"date"=>"2015-09-27", "slot"=>"10:00:00", "customer_notes"=>"testing12", "coupon_code"=>"testing"}
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (7.2ms)
+  Rendered generic_orders/_response.html.erb (0.1ms)
+  Rendered application/_footer.html.erb (5.4ms)
+  Rendered generic_orders/personal.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-24 01:34:22 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "house"=>"2/1 Rishi Apts, 4 Battery Lane", "street"=>"testing09809j;ljk", "pincode"=>"110054", "phone"=>"08089080"}
+Unpermitted parameters: house, street, pincode
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 3.8ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/generic_orders_controller.rb:39:in `+'
+  app/controllers/generic_orders_controller.rb:39:in `create'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.2ms)
+
+
+Started POST "/generic_orders" for ::1 at 2015-09-24 01:35:22 +0530
+Processing by GenericOrdersController#create as HTML
+  Parameters: {"name"=>"Abhimanyu Jain", "house"=>"2/1 Rishi Apts, 4 Battery Lane", "street"=>"testing09809j;ljk", "pincode"=>"110054", "phone"=>"08089080"}
+Unpermitted parameters: house, street, pincode
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("name", "phone", "customer_id", "email", "origin_of_request", "service", "initiated_on", "rating", "feedback", "amount", "vendor_id", "status", "address", "booking_date", "booking_slot", "customer_comments", "coupon_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17) RETURNING "id"[0m  [["name", "Abhimanyu Jain"], ["phone", 8089080], ["customer_id", 1], ["email", "sage76enator@gmail.com"], ["origin_of_request", "Desktop Browser"], ["service", "House Cleaning"], ["initiated_on", "2015-09-23 20:05:22.350234"], ["rating", 0], ["feedback", "nil"], ["amount", 0], ["vendor_id", 0], ["status", "Initiated"], ["address", "2/1 Rishi Apts, 4 Battery Lane, testing09809j;ljk, Bangalore, 110054"], ["booking_date", "2015-09-27"], ["booking_slot", "2000-01-01 10:00:00.000000"], ["customer_comments", "testing12"], ["coupon_code", "testing"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Completed 500 Internal Server Error in 30128ms (ActiveRecord: 6.4ms)
+
+SocketError (getaddrinfo: nodename nor servname provided, or not known):
+  lib/tasks/email.rb:14:in `sendMail'
+  app/controllers/generic_orders_controller.rb:56:in `create'
+
+
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2@global/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.9ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.5ms)
