@@ -42,7 +42,7 @@
 
               <td>
                 <br/>
-                <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 2*3600).strftime("%l:%M%p") %>
+                <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 3600).strftime("%l:%M%p") %>
                 <br/>
                 <%= order["booking_date"] %>
               </td>

@@ -97,11 +97,10 @@ class GenericOrdersController < ApplicationController
 
     @img = @@img_src[cookies[:service]]["img"]
     @tag_line = @@img_src[cookies[:service]]["tagline"]
-
+    @valid_slots = get_slots(all_slots)
   end
 
-  def orderConfirmation()
-
+  def orderConfirmation
   end
 
   def set_city
@@ -133,4 +132,33 @@ class GenericOrdersController < ApplicationController
     return true
   end
 
+  def all_slots
+    return [["10:00 AM - 11:00 AM", "10:00:00"],
+            ["11:00 AM = 12:00 PM", "11:00:00"],
+            ["12:00 PM - 1:00 PM", "12:00:00"],
+            ["1:00 PM - 2:00 PM", "13:00:00"],
+            ["2:00 PM - 3:00 PM", "14:00:00"],
+            ["3:00 PM - 4:00 PM", "15:00:00"],
+            ["4:00 PM - 5:00 PM", "16:00:00"],
+            ["5:00 PM - 6:00 PM", "17:00:00"],
+            ["6:00 PM - 7:00 PM", "18:00:00"],
+            ["7:00 PM - 8:00 PM", "19:00:00"]]
+  end
+
+  def get_slots(allSlots)
+    current_time = (Time.now + 7200).strftime("%H:%M:%S")
+    if current_time < allSlots[0][1]
+      return allSlots
+    elsif current_time > (allSlots[allSlots.size - 1][1])
+      return allSlots
+    else
+      slots = Array.new
+      allSlots.each { |x|
+      if x[0] > current_time
+        slots << x
+      end
+      }
+      return slots
+    end
+  end
 end

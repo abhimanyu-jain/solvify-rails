@@ -1,6 +1,17 @@
 <script>
     $(function() {
-        $( "#date" ).datepicker({dateFormat: "yy-mm-dd",  minDate: 0 });
+        var current_time = new Date($.now());
+        var minDate;
+        if (current_time.getHours().valueOf() > 17 )
+        {
+            minDate = 1;
+        }
+        else
+        {
+            minDate = 0;
+        }
+
+        $("#date").datepicker({dateFormat: "yy-mm-dd",  minDate: minDate });
     });
 </script>
 
@@ -38,18 +49,7 @@
 
         <div class="form-group">
           <label for="message-text" class="control-label">Slot:</label>
-          <select class="form-control" id="slot" name="slot" required>
-            <option value="10:00:00">10:00 am - 11:00 am</option>
-            <option value="11:00:00">11:00 am - 12:00 pm</option>
-            <option value="12:00:00">12:00 pm - 01:00 pm</option>
-            <option value="13:00:00">01:00 pm - 02:00 pm</option>
-            <option value="14:00:00">02:00 pm - 03:00 pm</option>
-            <option value="15:00:00">03:00 pm - 04:00 pm</option>
-            <option value="16:00:00">04:00 pm - 05:00 pm</option>
-            <option value="17:00:00">05:00 pm - 06:00 pm</option>
-            <option value="18:00:00">06:00 pm - 07:00 pm</option>
-            <option value="19:00:00">07:00 pm - 08:00 pm</option>
-          </select>
+          <%= select_tag "slot", options_for_select(@valid_slots), :class => "form-control"%>
         </div>
 
         <div class="form-group">
