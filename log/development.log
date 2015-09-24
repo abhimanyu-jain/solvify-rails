@@ -56259,3 +56259,32 @@ SocketError (getaddrinfo: nodename nor servname provided, or not known):
   Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
   Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/abhimanyu.jain/.rvm/gems/ruby-2.1.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 22:12:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (6.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GenericOrdersController#index as HTML
+  Rendered generic_orders/_city_selector.html.erb (0.3ms)
+  [1m[35mUser Load (18.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered application/_header.html.erb (167.5ms)
+  Rendered generic_orders/_services.html.erb (32.8ms)
+  Rendered application/_footer.html.erb (12.9ms)
+  Rendered generic_orders/index.html.erb within layouts/application (236.2ms)
+Completed 200 OK in 415ms (Views: 350.1ms | ActiveRecord: 53.5ms)
+
+
+Started GET "/service_page_selection?service_name=Electrical" for ::1 at 2015-09-24 22:12:35 +0530
+Processing by GenericOrdersController#select_service_page as HTML
+  Parameters: {"service_name"=>"Electrical"}
+Redirected to http://localhost:3000/Electrical
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/Electrical" for ::1 at 2015-09-24 22:12:35 +0530
+Processing by GenericOrdersController#orderInfoForm as HTML
+  Rendered generic_orders/_city_selector.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered application/_header.html.erb (4.3ms)
+  Rendered application/_footer.html.erb (8.3ms)
+  Rendered generic_orders/orderInfoForm.erb within layouts/application (20.4ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.4ms)

@@ -6,52 +6,52 @@
   <div class="col-md-1"></div>
   <div class="col-md-10">
     <h1>My Orders</h1><br/><br/>
-  <div class="table-responsive" id="myOrders">
-  <table class="table table-striped" id="requests">
-    <thead>
-    <tr>
-      <th>Order</th>
-      <th>Contact Info</th>
-      <th>Ordered On</th>
-      <th>Your Slot</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% @orders.each do |order| %>
+    <div class="table-responsive" id="myOrders">
+      <table class="table table-striped" id="requests">
+        <thead>
         <tr>
-          <td><h4><%= order["service"] %></h4>
-            <%= order["customer_comments"] %>
-            <br/>
-            Current Status : <%= order["status"] %>
-          </td>
-          <td>
-            <%= order["name"] %>
-            <br/>
-            <%= order["address"] %>
-            <br/>
-            <%= order["phone"] %>
-            <br/>
-            <%= order["email"] %>
-          </td>
-          <td>
-            <br/>
-            <%= order["initiated_on"].strftime("%l:%M%p")%>
-            <br/>
-            <%= order["initiated_on"].strftime("%d %b %Y")%>
-          </td>
+          <th>Order</th>
+          <th>Contact Info</th>
+          <th>Ordered On</th>
+          <th>Your Slot</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @orders.each do |order| %>
+            <tr>
+              <td><h4><%= order["service"] %></h4>
+                <%= order["customer_comments"] %>
+                <br/>
+                Current Status : <%= order["status"] %>
+              </td>
+              <td>
+                <%= order["name"] %>
+                <br/>
+                <%= order["address"] %>
+                <br/>
+                <%= order["phone"] %>
+                <br/>
+                <%= order["email"] %>
+              </td>
+              <td>
+                <br/>
+                <%= order["initiated_on"].strftime("%l:%M%p")%>
+                <br/>
+                <%= order["initiated_on"].strftime("%d %b %Y")%>
+              </td>
 
-          <td>
-            <br/>
-            <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 2*3600).strftime("%l:%M%p") %>
-            <br/>
-            <%= order["booking_date"] %>
-          </td>
-                  </tr>
-    <% end %>
-    </tbody>
-  </table>
-</div>
-</div>
+              <td>
+                <br/>
+                <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 2*3600).strftime("%l:%M%p") %>
+                <br/>
+                <%= order["booking_date"] %>
+              </td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div class="col-md-1"></div>
 </div>
 <%= render 'footer' %>
