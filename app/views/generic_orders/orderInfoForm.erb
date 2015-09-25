@@ -22,7 +22,6 @@
 <div class="spacer container"></div>
 <div class="spacer container">
   <div class="row">
-
     <div class="col-md-6">
       <h1 class="center"><%= cookies[:service] %></h1><br>
       <h4 class="center">
@@ -31,40 +30,42 @@
       <%= if !browser.mobile? then image_tag(@img, alt: cookies[:service], class: "center-block landing_page_main_image") end %>
     </div>
 
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
 
-    <div class="col-md-4 form_wrapper info_form">
-      <h3>Please Enter The Details Of Your Order</h3><br><br>
+    <div class="col-md-5">
+      <div class="form_wrapper info_form">
+        <h3>Please Enter The Details Of Your Order</h3><br><br>
 
-      <form action="/Personal_Info">
+        <form action="/Personal_Info">
 
-        <div class="form-group">
-          <label for="message-text" class="control-label">Date:</label><br/>
-          <!--<input type="date" id="date">-->
-          <input type="text" id="date" name="date" required>
-        </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Date:</label><br/>
+            <!--<input type="date" id="date">-->
+            <input type="text" id="date" name="date" required>
+          </div>
 
-        <div id="date_error" class="Error_Text"></div>
+          <div id="date_error" class="Error_Text"></div>
 
-        <div class="form-group">
-          <label for="message-text" class="control-label">Slot:</label>
-          <%= select_tag "slot", options_for_select(@valid_slots), :class => "form-control"%>
-        </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Slot:</label>
+            <%= select_tag "slot", options_for_select(@valid_slots), :class => "form-control"%>
+          </div>
 
-        <div class="form-group">
-          <label for="message-text" class="control-label">Any other details:</label>
-          <textarea class="form-control" id="notes" name="customer_notes"></textarea>
-        </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Any other details:</label>
+            <textarea class="form-control" id="notes" name="customer_notes"></textarea>
+          </div>
 
-        <div class="form-group">
-          <label for="message-text" class="control-label">Coupon Code (if any):</label>
-          <input class="form-control" id="Coupon" name="coupon_code">
-        </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Coupon Code (if any):</label>
+            <input class="form-control" id="Coupon" name="coupon_code">
+          </div>
 
-        <button type="submit" class="btn btn-primary">Next</button>
+          <button type="submit" class="btn btn-primary">Next</button>
 
-      </form>
-      <br/><br/>
+        </form>
+        <br/><br/>
+      </div>
     </div>
   </div>
 </div>
