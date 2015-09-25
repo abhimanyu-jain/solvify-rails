@@ -134,7 +134,7 @@ class GenericOrdersController < ApplicationController
 
   def all_slots
     return [["10:00 AM - 11:00 AM", "10:00:00"],
-            ["11:00 AM = 12:00 PM", "11:00:00"],
+            ["11:00 AM - 12:00 PM", "11:00:00"],
             ["12:00 PM - 1:00 PM", "12:00:00"],
             ["1:00 PM - 2:00 PM", "13:00:00"],
             ["2:00 PM - 3:00 PM", "14:00:00"],
@@ -154,7 +154,7 @@ class GenericOrdersController < ApplicationController
     else
       slots = Array.new
       allSlots.each { |x|
-      if x[0] > current_time
+      if x[1] > current_time
         slots << x
       end
       }
