@@ -29,7 +29,7 @@
       <h4 class="center">
         <%= @tag_line %>
       </h4><br/>
-      <%= image_tag(@img, alt: cookies[:service], class: "center-block landing_page_main_image") %>
+      <%= if !browser.mobile? then image_tag(@img, alt: cookies[:service], class: "center-block landing_page_main_image") end %>
     </div>
 
     <div class="col-md-1"></div>
