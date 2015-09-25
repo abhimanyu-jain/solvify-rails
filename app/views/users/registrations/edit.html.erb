@@ -13,8 +13,8 @@
         <%= devise_error_messages! %>
 
         <div class="field">
-          <%= f.label :email, class: "devise_text"%><br />
-          <%= f.email_field :email, autofocus: true, class: "devise_text_field" %>
+          <%= f.label :username, class: "devise_text"%><br />
+          <%= f.text_field :username, autofocus: true, class: "devise_text_field" %>
         </div>
         <br/>
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

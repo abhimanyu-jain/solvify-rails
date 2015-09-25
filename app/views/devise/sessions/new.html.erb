@@ -11,9 +11,9 @@
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field">
-          <%= f.label :username, class: "devise_text"%>
+          <%= f.label :email, class: "devise_text"%>
           <br/>
-          <%= f.text_field :username, autofocus: true, class: "devise_text_field" %>
+          <%= f.email_field :email, autofocus: true, class: "devise_text_field" %>
         </div>
         <br/><br/>
         <div class="field">
