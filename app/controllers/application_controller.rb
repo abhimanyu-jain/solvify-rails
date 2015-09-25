@@ -60,6 +60,14 @@ class ApplicationController < ActionController::Base
       }
   }
 
+  def aboutUs
+
+  end
+
+  def termsAndConditions
+
+  end
+
   def cancel_order
     @order = Order.find(params[:id])
     @order[:status] = "Cancelled"

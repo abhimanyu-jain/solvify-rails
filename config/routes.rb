@@ -34,6 +34,8 @@ Rails.application.routes.draw do
   post 'api/create' => 'api#create'
   post 'api/cancel_order' => 'api#cancel_order'
   post 'api/get_all' => 'api#get_all'
+  get 'AboutUs' => 'application#aboutUs'
+  get 'TermsAndConditions' => 'application#termsAndConditions'
 
   post 'changeStatus' => 'admin#changeStatus'
 
