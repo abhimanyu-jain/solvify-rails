@@ -72,6 +72,21 @@ class GenericOrdersController < ApplicationController
     end
   end
 
+  def cancel_order
+    @order = Order.find(params[:id])
+    @order[:status] = "Cancelled"
+    @order.save
+    to = @order[:email]
+    from = "donotreply@solvify.in"
+    subject = "Your order has been cancelled"
+    body = "Dear " + @order[:name] + ",<br/><br/>" + "Your order id number : " + @order[:id].to_s + "has been cancelled as per your request."
+    "<br/><br/>Thank You" +
+        "<br/>Team Solvify" +
+        "<br/>8884253299"
+    sendMail to, from, subject, body
+    redirect_to '/MyOrders'
+  end
+
   def select_service_page
     cookies[:service] = params[:service_name]
     redirect_to URI.escape('/'+ cookies[:service])

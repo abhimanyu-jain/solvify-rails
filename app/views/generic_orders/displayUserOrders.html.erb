@@ -1,4 +1,5 @@
 <%= render 'header' %>
+
 <div class="spacer container"></div>
 <div class="spacer container"></div>
 
@@ -45,6 +46,15 @@
                 <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 3600).strftime("%l:%M%p") %>
                 <br/>
                 <%= order["booking_date"] %>
+              </td>
+              <td>
+                <br/>
+                <% if order["status"] != "Cancelled" %>
+                    <form method="post" action="/cancelOrder">
+                      <input name="id" value=<%= order["id"]%> hidden>
+                      <button class="btn btn-danger">Cancel</button>
+                    </form>
+                <% end %>
               </td>
             </tr>
         <% end %>
