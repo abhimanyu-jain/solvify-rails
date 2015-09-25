@@ -8,8 +8,17 @@
   </div>
 
   <div class="panel-body">
-
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+
+        <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+
+        <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+
         <div class="field">
           <%= f.label :email, class: "devise_text"%>
           <br/>
