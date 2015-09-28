@@ -39,8 +39,12 @@ Rails.application.routes.draw do
 
   post 'changeStatus' => 'admin#changeStatus'
 
-  devise_for :users, controllers: {registrations: "users/registrations"}
+  devise_for :users, controllers: {
+      registrations: "users/registrations",
+      :omniauth_callbacks => "users/omniauth_callbacks"
+  }
 
+  
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
