@@ -15,13 +15,9 @@
 body { margin: 50px;}
 .well { background: #fff; text-align: center; }
 .modal { text-align: left; }
-/*.service {
-    width: 300px;
-    padding: 25px;
-    border: 25px solid #303F9F;
-    margin: 25px;
-    border-radius: 5px;
-}*/
+.our_edge {
+    height: 150px;
+}
 
 .steps { height: 140px; width: 140px; margin-left: auto; margin-right: auto;}
 .social_icn {width: 25px; height: 25px;}
