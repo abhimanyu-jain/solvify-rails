@@ -36,7 +36,7 @@ class GenericOrdersController < ApplicationController
     @order[:vendor_id] = 0
     @order[:status] = 'Initiated'
     @order[:name] = params[:name]
-    @order[:address] = params[:house] + ", " + params[:street] + ", " + (params[:city]?params[:city]:cookies[:city]) + ", " + params[:pincode]
+    @order[:address] = params[:address] || (params[:house] + ", " + params[:street] + ", " + (params[:city]?params[:city]:cookies[:city]) + ", " + params[:pincode])
     @order[:phone] = params[:phone]
     @order[:booking_date] = cookies[:date]
     @order[:booking_slot] = cookies[:slot]
@@ -87,6 +87,13 @@ class GenericOrdersController < ApplicationController
     cookies[:slot] = params[:slot]
     cookies[:customer_notes] = params[:customer_notes]
     cookies[:coupon_code] = params[:coupon_code]
+
+    if current_user != nil
+      params[:customer_id] = current_user.id
+      #Find disctinct name+address+phone combos of a user, raw query was the only way to achieve
+      sql = "select distinct o.name,o.address,o.phone from (select id,name,address,phone from orders where customer_id="+params[:customer_id].to_s+" order by id desc) as o limit 2"
+      @contacts = ActiveRecord::Base.connection.execute(sql)
+    end
   end
 
   def orderInfoForm
