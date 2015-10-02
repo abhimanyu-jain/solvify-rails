@@ -29,7 +29,7 @@ class GenericOrdersController < ApplicationController
     end
 
     @order[:service] = cookies[:service]
-    @order[:initiated_on] = DateTime.now
+    @order[:initiated_on] = Time.zone.now
     @order[:rating] = 0
     @order[:feedback] = 'nil'
     @order[:amount] = 0
@@ -158,7 +158,7 @@ class GenericOrdersController < ApplicationController
   end
 
   def get_slots(allSlots)
-    current_time = (Time.now + 7200).strftime("%H:%M:%S")
+    current_time = (Time.zone.now + 7200).strftime("%H:%M:%S")
     if current_time < allSlots[0][1]
       return allSlots
     elsif current_time > (allSlots[allSlots.size - 1][1])

@@ -7,7 +7,7 @@ class ApiController < ApplicationController
   def create
     @order = Order.new(order_params)
     @order[:origin_of_request] = "Mobile App"
-    @order[:initiated_on] = DateTime.now
+    @order[:initiated_on] = Time.zone.now
     @order[:rating] = 0
     @order[:feedback] = 'nil'
     @order[:amount] = 0
