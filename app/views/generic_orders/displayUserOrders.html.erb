@@ -2,66 +2,70 @@
 
 <div class="spacer container"></div>
 <div class="spacer container"></div>
-
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
-    <h1>My Orders</h1><br/><br/>
-    <div class="table-responsive" id="myOrders">
-      <table class="table table-striped" id="requests">
-        <thead>
-        <tr>
-          <th>Order</th>
-          <th>Contact Info</th>
-          <th>Ordered On</th>
-          <th>Your Slot</th>
-        </tr>
-        </thead>
-        <tbody>
-        <% @orders.each do |order| %>
+<% if @orders.size > 0 %>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h1>My Orders</h1><br/><br/>
+        <div class="table-responsive" id="myOrders">
+          <table class="table table-striped" id="requests">
+            <thead>
             <tr>
-              <td><h4><%= order["service"] %></h4>
-                <%= order["customer_comments"] %>
-                <br/>
-                Current Status : <%= order["status"] %>
-              </td>
-              <td>
-                <%= order["name"] %>
-                <br/>
-                <%= order["address"] %>
-                <br/>
-                <%= order["phone"] %>
-                <br/>
-                <%= order["email"] %>
-              </td>
-              <td>
-                <br/>
-                <%= order["initiated_on"].strftime("%l:%M%p")%>
-                <br/>
-                <%= order["initiated_on"].strftime("%d %b %Y")%>
-              </td>
-
-              <td>
-                <br/>
-                <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 3600).strftime("%l:%M%p") %>
-                <br/>
-                <%= order["booking_date"] %>
-              </td>
-              <td>
-                <br/>
-                <% if order["status"] != "Cancelled" %>
-                    <form method="post" action="/cancelOrder">
-                      <input name="id" value=<%= order["id"]%> hidden>
-                      <button class="btn btn-danger">Cancel</button>
-                    </form>
-                <% end %>
-              </td>
+              <th>Order</th>
+              <th>Contact Info</th>
+              <th>Ordered On</th>
+              <th>Your Slot</th>
             </tr>
-        <% end %>
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+            <% @orders.each do |order| %>
+                <tr>
+                  <td><h4><%= order["service"] %></h4>
+                    <%= order["customer_comments"] %>
+                    <br/>
+                    Current Status : <%= order["status"] %>
+                  </td>
+                  <td>
+                    <%= order["name"] %>
+                    <br/>
+                    <%= order["address"] %>
+                    <br/>
+                    <%= order["phone"] %>
+                    <br/>
+                    <%= order["email"] %>
+                  </td>
+                  <td>
+                    <br/>
+                    <%= order["initiated_on"].strftime("%l:%M%p")%>
+                    <br/>
+                    <%= order["initiated_on"].strftime("%d %b %Y")%>
+                  </td>
+
+                  <td>
+                    <br/>
+                    <%= order["booking_slot"].strftime("%l:%M%p") %> To <%= (order["booking_slot"] + 3600).strftime("%l:%M%p") %>
+                    <br/>
+                    <%= order["booking_date"] %>
+                  </td>
+                  <td>
+                    <br/>
+                    <% if order["status"] != "Cancelled" %>
+                        <form method="post" action="/cancelOrder">
+                          <input name="id" value=<%= order["id"]%> hidden>
+                          <button class="btn btn-danger">Cancel</button>
+                        </form>
+                    <% end %>
+                  </td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
-  </div>
-  <div class="col-md-1"></div>
-</div>
+<% else %>
+    <h1 class="center">You have not placed any orders yet. Start today... and get things done!!</h1>
+    <%= render 'services' %>
+<% end %>
 <%= render 'footer' %>
