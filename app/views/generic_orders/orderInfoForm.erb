@@ -1,5 +1,6 @@
 <script>
     $(function() {
+
         var current_time = new Date($.now());
         var minDate;
         if (current_time.getHours().valueOf() > 17 )
@@ -11,7 +12,27 @@
             minDate = 0;
         }
 
-        $("#date").datepicker({dateFormat: "yy-mm-dd",  minDate: minDate });
+        $("#date").datepicker(
+                {
+                    dateFormat: "yy-mm-dd",
+                    minDate: minDate,
+                    onSelect: function() {
+                        var current_date = $.datepicker.formatDate('yy-mm-dd', new Date());
+                        var date = $(this).val();
+                        if(current_date == date)
+                        {
+                            $('#slot_selector').empty();
+                            $("#slot_selector").html('<%= escape_javascript select_tag "slot", options_for_select(@today_valid_slots), :class => "form-control"%>');
+                        }
+                        else
+                        {
+                            $('#slot_selector').empty();
+                            $("#slot_selector").html('<%= escape_javascript select_tag "slot", options_for_select(@all_slots), :class => "form-control"%>');
+
+                        }
+
+                    }
+                });
     });
 </script>
 
@@ -48,7 +69,9 @@
 
           <div class="form-group">
             <label for="message-text" class="control-label">Slot:</label>
-            <%= select_tag "slot", options_for_select(@valid_slots), :class => "form-control"%>
+            <div id="slot_selector">
+                <%= select_tag "slot", options_for_select(@all_slots), :class => "form-control"%>
+            </div>
           </div>
 
           <div class="form-group">

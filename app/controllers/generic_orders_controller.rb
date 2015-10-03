@@ -109,7 +109,8 @@ class GenericOrdersController < ApplicationController
 
     @img = @@img_src[cookies[:service]]["img"]
     @tag_line = @@img_src[cookies[:service]]["tagline"]
-    @valid_slots = get_slots(all_slots)
+    @today_valid_slots = get_slots(all_slots)
+    @all_slots = all_slots
   end
 
   def orderConfirmation
