@@ -21,25 +21,27 @@
     <div class="col-md-10 info_form">
       <h2 class="center">Please enter your personal information</h2>
       <br><br>
-      <div>
-        <div class="row">
-          <% @contacts.values.each do |contact| %>
-              <div class="col-md-5 contact_box">
-                <form action="/generic_orders" method="post">
-                  <h4>
-                    <!--0,1,2 indices being used because results of raw query are being used and there was no other choice-->
-                    <input name="name" value="<%= contact[0] %>" hidden /><%= contact[0] %>
-                  </h4>
-                  <input name="address" value="<%= contact[1] %>" hidden /><%= contact[1] %><br/>
-                  <h5>
-                    <input name="phone" value="<%= contact[2] %>" hidden /><%= contact[2] %>
-                  </h5>
-                  <button type="submit" class="btn btn-primary">Use this</button>
-                </form>
-              </div>
-          <% end %>
-        </div>
-      </div>
+      <% if @contacts != nil %>
+          <div>
+            <div class="row">
+              <% @contacts.values.each do |contact| %>
+                  <div class="col-md-5 contact_box">
+                    <form action="/generic_orders" method="post">
+                      <h4>
+                        <!--0,1,2 indices being used because results of raw query are being used and there was no other choice-->
+                        <input name="name" value="<%= contact[0] %>" hidden /><%= contact[0] %>
+                      </h4>
+                      <input name="address" value="<%= contact[1] %>" hidden /><%= contact[1] %><br/>
+                      <h5>
+                        <input name="phone" value="<%= contact[2] %>" hidden /><%= contact[2] %>
+                      </h5>
+                      <button type="submit" class="btn btn-primary">Use this</button>
+                    </form>
+                  </div>
+              <% end %>
+            </div>
+          </div>
+      <% end %>
       <br/>
       <% if @contacts.values.size > 0 %>
           <h3 align="center">OR</h3>
