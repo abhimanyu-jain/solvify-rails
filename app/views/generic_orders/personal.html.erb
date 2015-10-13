@@ -43,8 +43,10 @@
           </div>
       <% end %>
       <br/>
-      <% if @contacts.values.size > 0 %>
-          <h3 align="center">OR</h3>
+      <% if @contacts != nil %>
+          <% if @contacts.values.size > 0 %>
+              <h3 align="center">OR</h3>
+          <% end %>
       <% end %>
       <br><br>
       <h4>Enter new contact information:</h4><br>
