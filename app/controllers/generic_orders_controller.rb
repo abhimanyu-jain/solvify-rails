@@ -56,7 +56,7 @@ class GenericOrdersController < ApplicationController
     "<br/>8884253299"
     sendMail to, from, subject, body
 
-    sms_message = "Hi "+@order[:name]+", your order has been received. Your order id is : "+@order[:id].to_s+".\n Thank you \n Team Solvify"
+    sms_message = "Hi "+@order[:name]+", your order has been received. Your order id is : "+@order[:id].to_s+".\nThank you \nTeam Solvify"
     send_sms(@order[:phone], sms_message)
   end
 
