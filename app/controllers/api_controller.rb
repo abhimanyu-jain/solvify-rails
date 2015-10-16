@@ -1,4 +1,5 @@
 require 'tasks/email'
+require 'tasks/sms'
 
 class ApiController < ApplicationController
 
