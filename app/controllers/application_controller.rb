@@ -80,6 +80,9 @@ class ApplicationController < ActionController::Base
         "<br/>Team Solvify" +
         "<br/>8884253299"
     sendMail to, from, subject, body
+
+    sms_message = "Hi "+@order[:name]+", your order id number " + @order[:id].to_s + " has been cancelled as per your request.\nThank you \nTeam Solvify"
+    send_sms(@order[:phone], sms_message)
   end
 
   helper_method :img_src

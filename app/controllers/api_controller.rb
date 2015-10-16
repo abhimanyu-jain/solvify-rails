@@ -29,7 +29,7 @@ class ApiController < ApplicationController
 
     sms_message = "Hi "+@order[:name]+", your order has been received. Your order id is : "+@order[:id].to_s+".\nThank you \nTeam Solvify"
     send_sms(@order[:phone], sms_message)
-    
+
     render json: @order
   end
 
