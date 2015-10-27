@@ -56,6 +56,19 @@ class GenericOrdersController < ApplicationController
     "<br/>8884253299"
     sendMail to, from, subject, body
 
+    to = "solvifyin@gmail.com"
+    from = "donotreply@solvify.in"
+    subject = "New order " + @order[:id].to_s
+    body = "Name = " + @order[:name] +
+        ".<br/><br/> Order details are : " +
+        "<br/>Service : " + @order[:service] +
+        "<br/>Customer comments : " + @order[:customer_comments] +
+        "<br/>Booking Date and Slot : " + @order["booking_slot"].strftime("%l:%M%p") + " " + @order["booking_date"].to_s +
+        "<br/>Phone : " + @order[:phone].to_s +
+        "<br/>Address : " + @order[:address]
+    sendMail to, from, subject, body
+
+
     sms_message = "Hi "+@order[:name]+", your order has been received. Your order id is : "+@order[:id].to_s+".\nThank you \nTeam Solvify"
     send_sms(@order[:phone], sms_message)
   end
