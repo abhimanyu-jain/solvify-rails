@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 
+  service: MyString
+  initiated_on: 2015-08-06 19:13:05
+  booking_date: 2015-08-06
+  booking_slot: 2015-08-06 19:13:05
+  rating: 1
+  feedback: MyText
+  amount: 1
+  vendor_id: 
+  status: MyString
+  customer_comments: MyText
+  origin_of_request: MyString
+
+two:
+  customer_id: 
+  service: MyString
+  initiated_on: 2015-08-06 19:13:05
+  booking_date: 2015-08-06
+  booking_slot: 2015-08-06 19:13:05
+  rating: 1
+  feedback: MyText
+  amount: 1
+  vendor_id: 
+  status: MyString
+  customer_comments: MyText
+  origin_of_request: MyString

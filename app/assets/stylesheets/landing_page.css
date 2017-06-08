@@ -1,0 +1,88 @@
+.white_text {
+    color: white;
+}
+
+.spacer {
+    margin-top: 50px;
+}
+
+.service_image {
+    margin-top: 40px;
+    height: 120px;
+}
+
+body {
+    margin: 50px;
+}
+
+.well {
+    background: #fff;
+    text-align: center;
+}
+
+.modal {
+    text-align: left;
+}
+
+.our_edge {
+    height: 150px;
+}
+
+.steps {
+    height: 140px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social_icn {
+    width: 25px;
+    height: 25px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.grey {
+    background-color: #f5f6f6;
+    width: 100%;
+}
+
+#service_name {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*#locality {width: 250px; margin-left: auto; margin-right: auto;}*/
+.Error_Text {
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
+
+.numeric {
+    height: 120px;
+    width: 120px;
+}
+
+#navbar_title {
+    display: inline-block;
+}
+
+#main {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.info_form {
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 30px;
+}
+
+#myOrders {
+    border-radius: 25px;
+    border: 2px solid gray;
+}

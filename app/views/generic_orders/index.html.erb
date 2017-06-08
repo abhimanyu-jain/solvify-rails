@@ -1,0 +1,99 @@
+<!-- TODO : INCLUDE THIS  <?php include_once("analyticstracking.php") ?> -->
+
+<body>
+<p hidden>SendGrid</p>
+
+<%= render 'header' %>
+
+<div id="main">
+    <h2 class="text-center">Find a trusted service provider near you</h2>
+
+    <br>
+    <h4 class="text-center">Select a service</h4>
+
+    <form action="/service_page_selection" method="GET">
+      <div class="form-group">
+        <select class="form-control" id="service_name" name="service_name" placeholder="Service">
+          <option disabled>---Current Services---</option>
+          <option>Electrical</option>
+          <option>Plumbing</option>
+          <option>Packers And Movers</option>
+          <option>Laundry</option>
+          <option>Car Wash</option>
+          <option>Pest Control</option>
+          <option>Computer Repair</option>
+          <option>Appliance Repair</option>
+          <option>House Cleaning</option>
+          <option>Carpenter</option>
+          <option>Other</option>
+          <%= if cookies[:city] == 'Bangalore'
+                options_for_select(["Cook", "Painter", "Keymaker"])
+              end%><!--<option>Cook</option>
+          <option>Painter</option>
+          <option>Keymaker</option>-->
+        </select>
+      </div>
+
+      <br/>
+      <div id="Error_Text" class="Error_Text"></div>
+      <button id="main_button" type="submit" class="btn-success index_btn center-block" onclick="verify_data();">
+        Book Now
+      </button>
+    </form>
+</div>
+
+<%= render 'services' %>
+
+<div class="spacer grey" id="howitworks">
+  <div class="container spacer">
+    <h1 class="text-center">How it works</h1>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag('step1.png', alt: "One", class: "img-circle numeric steps center-block img-responsive") %>
+        <h3 class="text-center">Pick A Service</h3>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag('step2.png', alt: "Two", class: "img-circle numeric steps center-block img-responsive") %>
+        <h3 class="text-center">Book online</h3>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag('step3.png', alt: "Three", class: "img-circle numeric steps center-block img-responsive") %>
+        <h3 class="text-center">Pay After Work is Done</h3>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </div>
+</div>
+
+<div class="spacer grey" id="sqg">
+  <div class="spacer container">
+    <div class="row spacer">
+      <div class="col-md-4">
+        <%= image_tag('safety.png', alt: "safety", class: "center-block our_edge") %>
+        <br>
+        <h2 class="text-center">Safety</h2>
+        <h5 class="text-center">All of our service providers are verified and their backgrounds are thoroughly
+          scrutinized.</h5>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag('quality.png', alt: "quality", class: "center-block our_edge") %>
+        <h2 class="text-center">Quality</h2>
+        <h5 class="text-center">We ensure that the service providers are well trained and have the relevant experience
+          to give you the highest quality of service.</h5>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag('guarantee.png', alt: "guarantee", class: "center-block our_edge") %>
+        <h2 class="text-center">Guarantee</h2>
+        <h5 class="text-center">We provide a 10 day guarantee on all our services.</h5>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </div>
+</div>
+
+<%= render 'footer' %>
+
+<div class="spacer"></div>
+</body>
+</html>

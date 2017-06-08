@@ -1,0 +1,95 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".navbar-nav li a").click(function (event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        $("#set_city").click(function() {
+            $('#city').modal('toggle');
+         });
+
+    });
+</script>
+
+<%= render 'city_selector' %>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <%= image_tag('logo.jpg', alt: "Solvify", class: "main_logo") %>
+
+          <a href="http://www.solvify.in"><h3 class="white_text" id="navbar_title">Solvify</h3><sup> Beta</sup></a>
+          <ul class="nav navbar-nav navbar-right list-inline icons" style="margin-top: 20px; margin-left: 50px;">
+            <li><h5><%= link_to 'Home', root_path, :class => 'header-link white_text' %></h5></li>
+            <li>
+              <h5><%= link_to 'My Orders', myOrders_path, :class => 'header-link white_text' %></h5>
+            </li>
+            <li>
+              <div class="dropdown">
+                <h5 class="dropdown-toggle white_text" data-toggle="dropdown">
+                  <%= link_to 'Services', "#", :class => 'header-link white_text' %>
+                </h5>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <% img_src.each do |key,value| %>
+                      <li><%= link_to key, key %></li>
+                  <% end %>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+
+              <% if params[:controller] == 'generic_orders' %>
+                  <div>
+                    <button class="btn btn-success" type="button" id="set_city">
+                      <% if cookies[:city] == nil %>
+                          Select City
+                      <% else %>
+                          <%= cookies[:city] %>
+                      <% end %>
+                      <span class="caret"></span>
+                    </button>
+                  </div>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right list-inline icons" style="margin-top: 20px;">
+          <li>
+            <% if user_signed_in? %>
+                <div class="dropdown">
+                  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Logged in as <%= current_user.username %></button>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+                    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                  </ul>
+                </div>
+            <% else %>
+                <div class="dropdown">
+                  <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Log in/Sign up</button>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+                    <li><%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %></li>
+                    <li><%= link_to "Sign up", new_user_registration_path %></li>
+                    <li><%= link_to "Login", new_user_session_path %></li>
+                  </ul>
+                </div>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+<script>
+    $(function() {
+
+        var current_time = new Date($.now());
+        var minDate;
+        if (current_time.getHours().valueOf() > 17 )
+        {
+            minDate = 1;
+        }
+        else
+        {
+            minDate = 0;
+        }
+
+        $("#date").datepicker(
+                {
+                    dateFormat: "yy-mm-dd",
+                    minDate: minDate,
+                    onSelect: function() {
+                        var current_date = $.datepicker.formatDate('yy-mm-dd', new Date());
+                        var date = $(this).val();
+                        if(current_date == date)
+                        {
+                            $('#slot_selector').empty();
+                            $("#slot_selector").html('<%= escape_javascript select_tag "slot", options_for_select(@today_valid_slots), :class => "form-control"%>');
+                        }
+                        else
+                        {
+                            $('#slot_selector').empty();
+                            $("#slot_selector").html('<%= escape_javascript select_tag "slot", options_for_select(@all_slots), :class => "form-control"%>');
+
+                        }
+
+                    }
+                });
+    });
+</script>
+
+
+<%= render 'header'%>
+
+<body id=<%= cookies[:service]%>>
+<div class="spacer container"></div>
+<div class="spacer container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="center"><%= cookies[:service] %></h1><br>
+      <h4 class="center">
+        <%= @tag_line %>
+      </h4><br/>
+      <%= if !browser.mobile? then image_tag(@img, alt: cookies[:service], class: "center-block landing_page_main_image") end %>
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-5">
+      <div class="form_wrapper info_form">
+        <h3>Please Enter The Details Of Your Order</h3><br><br>
+
+        <form action="/Personal_Info">
+
+          <div class="form-group">
+            <label for="message-text" class="control-label">Date:</label><br/>
+            <!--<input type="date" id="date">-->
+            <input type="text" id="date" name="date" required>
+          </div>
+
+          <div id="date_error" class="Error_Text"></div>
+
+          <div class="form-group">
+            <label for="message-text" class="control-label">Slot:</label>
+            <div id="slot_selector">
+                <%= select_tag "slot", options_for_select(@all_slots), :class => "form-control"%>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message-text" class="control-label">Any other details:</label>
+            <textarea class="form-control" id="notes" name="customer_notes"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="message-text" class="control-label">Coupon Code (if any):</label>
+            <input class="form-control" id="Coupon" name="coupon_code">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Next</button>
+
+        </form>
+        <br/><br/>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<%= render 'footer' %>
